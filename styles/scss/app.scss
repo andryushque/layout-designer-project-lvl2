@@ -1,0 +1,92 @@
+@import "variables";
+@import "header";
+@import "intro";
+@import "main";
+@import "footer";
+
+
+/*=====  Basic  =====*/
+
+html {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'MyriadPro', sans-serif;
+    color: $white;
+    background-color: $black;
+    position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.ai-center {
+    align-items: center;
+}
+
+
+/*===== Text styles =====*/
+
+.tt-upper {
+    text-transform: uppercase;
+}
+
+.td-none {
+    text-decoration: none;
+}
+
+.fw-light {
+    font-weight: 300;
+}
+
+.fw-bold {
+    font-weight: 700;
+}
+
+.fs-11 {
+    font-size: 1.1rem;
+}
+
+.fs-12 {
+    font-size: 1.2rem;
+}
+
+.fs-14 {
+    font-size: 1.2rem;
+}
+
+.fs-16 {
+    font-size: 1.6rem;
+}
+
+.fs-18 {
+    font-size: 1.8rem;
+}
+
+.fs-24 {
+    font-size: 2.4rem;
+}
+
+.fs-38 {
+    font-size: 3.8rem;
+}
+
+.fs-60 {
+    font-size: 6rem;
+}
