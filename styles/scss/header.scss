@@ -53,7 +53,9 @@
         width: auto;
         position: relative;
     }
+
     input {
+        box-sizing: border-box;
         width: 28.1rem;
         height: 3.1rem;
         margin-left: 1.3rem;
@@ -61,7 +63,18 @@
         background: $darkgrey;
         border: none;
         outline: none;
+
+        &:focus {
+            color: rgba($grey, 1);
+            font-size: 1.6rem;
+
+            &::placeholder {
+                color: transparent;
+            }
+
+        }
     }
+
     button {
         position: absolute;
         background: none;
