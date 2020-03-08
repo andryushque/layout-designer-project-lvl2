@@ -118,6 +118,179 @@
     box-shadow: 0 0 2px #FFF; }
 
 /*=====  Main  =====*/
+.main {
+  background: #08020D;
+  text-align: center;
+  padding-top: 10rem; }
+
+.main-inner {
+  flex-direction: column; }
+
+/*=====  Subscriptions  =====*/
+.main-subscribe {
+  margin-bottom: 10rem; }
+  .main-subscribe .item-title {
+    margin-bottom: 8rem; }
+
+.subscriptions {
+  width: 100%;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-bottom: 3.8rem; }
+
+.subscription {
+  width: 35rem;
+  height: 58rem;
+  background-size: cover;
+  border-radius: 1rem; }
+  .subscription:hover {
+    box-shadow: 0 0 2px #3C3B3D; }
+
+.subscription.free {
+  background: url(../images/subscribe_1.png) center 100% no-repeat; }
+
+.subscription.standart {
+  background: url(../images/subscribe_2.png) center 100% no-repeat; }
+
+.subscription.premium {
+  background: url(../images/subscribe_3.png) center 100% no-repeat; }
+
+.subscription-type {
+  margin-top: 2.5rem;
+  margin-bottom: 22.5rem; }
+
+.subscription-price {
+  justify-content: center;
+  margin-bottom: 4rem; }
+  .subscription-price span {
+    line-height: 1; }
+    .subscription-price span:last-child {
+      margin-left: 1rem;
+      line-height: 1.5; }
+
+.subscription-button {
+  box-sizing: border-box;
+  width: 30rem;
+  height: 7rem;
+  margin-bottom: 5rem;
+  border: 4px solid #FFF;
+  border-radius: .4rem;
+  outline: none;
+  background-color: transparent;
+  color: #FFF; }
+  .subscription-button:focus, .subscription-button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 2px #FFF; }
+
+.subscription-info {
+  margin: 0 2rem;
+  letter-spacing: -.5px; }
+
+.item-info {
+  margin: 0 3rem; }
+
+/*=====  News  =====*/
+.main-news {
+  margin-bottom: 10rem; }
+  .main-news .item-title {
+    margin-bottom: 6.3rem; }
+
+.news {
+  width: 100%;
+  flex-direction: column; }
+
+.news-item {
+  width: 100%;
+  justify-content: flex-start;
+  margin-bottom: 3rem; }
+
+.news-item:nth-child(odd) .news-block:nth-child(even) .news-inner {
+  width: 45rem;
+  margin-left: 10rem; }
+
+.news-item:nth-child(even) .news-block:nth-child(odd) .news-inner {
+  width: 45rem; }
+
+.news-content {
+  max-width: 50%;
+  width: 60rem;
+  text-align: left; }
+
+.news-image {
+  max-width: 50%;
+  width: 57rem; }
+
+.album-title {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem; }
+
+.album-info {
+  margin-bottom: 2rem;
+  line-height: 2;
+  color: #8C8C8C; }
+
+.album-release {
+  align-items: center;
+  margin-bottom: 4.5rem; }
+  .album-release img {
+    margin-right: 2rem;
+    border-radius: 50%;
+    border: 1px solid #FFF; }
+  .album-release span:first-of-type {
+    color: #F89202;
+    padding-right: 2.2rem;
+    margin-right: 2.5rem;
+    border-right: 1px solid #FFF; }
+  .album-release span.date {
+    color: #555555; }
+
+.news-button {
+  box-sizing: border-box;
+  width: 13rem;
+  height: 4rem;
+  margin-bottom: 2rem;
+  border: 1px solid #FFF;
+  outline: none;
+  background-color: transparent;
+  color: #FFF; }
+  .news-button:focus, .news-button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 2px #FFF; }
+
+/*=====  Application  =====*/
+.main-application {
+  margin-bottom: 10rem; }
+  .main-application .item-title {
+    margin-bottom: 10rem; }
+
+.application {
+  justify-content: space-between; }
+
+.application-info {
+  width: 57rem;
+  text-align: left;
+  line-height: 1.5;
+  color: #999999; }
+  .application-info p {
+    margin-bottom: 3rem; }
+
+.application-image {
+  width: 60rem;
+  justify-content: center; }
+
+.application-button {
+  box-sizing: border-box;
+  width: 16rem;
+  height: 5rem;
+  border-radius: 5rem;
+  border: none;
+  outline: none;
+  background-color: #FF4157;
+  color: #FFF; }
+  .application-button:focus, .application-button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 2px #FFF; }
+
 /*=====  Footer  =====*/
 .footer {
   background: linear-gradient(45deg, #5328A1, #95390C);
@@ -215,6 +388,9 @@ p {
 .fw-bold {
   font-weight: 700; }
 
+.fs-7 {
+  font-size: .7rem; }
+
 .fs-11 {
   font-size: 1.1rem; }
 
@@ -229,6 +405,9 @@ p {
 
 .fs-18 {
   font-size: 1.8rem; }
+
+.fs-22 {
+  font-size: 2.2rem; }
 
 .fs-24 {
   font-size: 2.4rem; }
