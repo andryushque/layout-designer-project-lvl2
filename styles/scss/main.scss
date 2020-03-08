@@ -2,3 +2,12 @@
 
 
 /*=====  Main  =====*/
+
+.main {
+    background: $black;
+    text-align: center;
+}
+
+.main-inner {
+    flex-direction: column;
+}
