@@ -18,9 +18,16 @@
 
 .main-subscribe {
     margin-bottom: 10rem;
+    flex-wrap: wrap;
+    justify-content: center;
 
     .item-title {
+        width: 100%;
         margin-bottom: 8rem;
+    }
+
+    .item-info {
+        width: 100%;
     }
 }
 

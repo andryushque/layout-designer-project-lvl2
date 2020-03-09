@@ -147,9 +147,14 @@
 
 /*=====  Subscriptions  =====*/
 .main-subscribe {
-  margin-bottom: 10rem; }
+  margin-bottom: 10rem;
+  flex-wrap: wrap;
+  justify-content: center; }
   .main-subscribe .item-title {
+    width: 100%;
     margin-bottom: 8rem; }
+  .main-subscribe .item-info {
+    width: 100%; }
 
 .subscriptions {
   width: 100%;
@@ -396,6 +401,9 @@ p {
 .w-100 {
   width: 100%; }
 
+.btn {
+  font-family: "MyriadPro", sans-serif; }
+
 /*===== Text styles =====*/
 .tt-upper {
   text-transform: uppercase; }
@@ -451,6 +459,20 @@ p {
   .header-nav {
     margin-right: 0; }
 
+  /*=====  Subscriptions  =====*/
+  .main-subscribe {
+    justify-content: center; }
+
+  .subscriptions {
+    width: 95%;
+    justify-content: space-between; }
+
+  .subscription {
+    width: 30%; }
+
+  .subscription-button {
+    width: 80%; }
+
   /*=====  Footer  =====*/
   .footer-info {
     justify-content: center; }
@@ -475,6 +497,23 @@ p {
 
   .header-search form input {
     width: 22rem; }
+
+  /*=====  Subscriptions  =====*/
+  .main {
+    padding-top: 5rem; }
+
+  .main-subscribe .item-title {
+    margin-bottom: 5rem; }
+
+  .subscription {
+    height: 45rem; }
+
+  .subscription-type {
+    margin-top: 2rem;
+    margin-bottom: 10rem; }
+
+  .subscription-button {
+    font-size: 2rem; }
 
   /*=====  Footer  =====*/
   .footer-info-inner {
@@ -539,6 +578,23 @@ p {
   .intro-button {
     width: 80vw;
     margin-bottom: 1rem; }
+
+  /*=====  Subscriptions  =====*/
+  .main-subscribe .item-title {
+    margin-bottom: 3rem; }
+
+  .subscriptions {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%; }
+
+  .subscription {
+    width: 100%;
+    max-width: 35rem;
+    height: 45rem;
+    margin-bottom: 2rem; }
+    .subscription:last-child {
+      margin-bottom: 0; }
 
   /*=====  Footer  =====*/
   .footer-info-inner {
@@ -614,6 +670,10 @@ p {
   .intro-subtitle {
     font-size: 1.8rem; }
 
+  /*=====  Subscriptions  =====*/
+  .subscriptions {
+    width: 100%; }
+
   /*=====  Footer  =====*/
   .footer-info-item {
     width: 100%;
@@ -636,6 +696,10 @@ p {
     font-size: 1.4rem;
     line-height: 1; }
 
+  /*=====  Subscriptions  =====*/
+  .subscriptions {
+    width: 100%; }
+
   /*=====  Footer  =====*/
   .footer-links-inner .footer-list-link {
     margin-right: .5rem; } }
@@ -645,6 +709,10 @@ p {
     font-size: 2.8rem; }
 
   .intro-subtitle {
-    font-size: 1.4rem; } }
+    font-size: 1.4rem; }
+
+  /*=====  Subscriptions  =====*/
+  .subscription {
+    max-width: 30rem; } }
 
 /*# sourceMappingURL=style.css.map */
