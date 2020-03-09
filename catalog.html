@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Music Box | andryushque</title>
@@ -7,6 +7,202 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="header-inner flex ai-center">
+            <div class="header-left flex ai-center">
+                <div class="header-logo flex ai-center">
+                    <div class="header-logo-image">
+                        <img src="images/logo.svg" alt="logo">
+                    </div>
+                    <div class="header-logo-title fw-bold fs-11 tt-upper">
+                        <a class="header-link td-none" href="#">Music Box</a>
+                    </div>
+                </div>
+
+                <nav class="header-nav flex fs-11 tt-upper">
+                    <a class="header-link td-none" href="#">Главная</a>
+                    <a class="header-link td-none active" href="#">Каталог</a>
+                    <a class="header-link td-none" href="#">Исполнители</a>
+                    <a class="header-link td-none" href="#">Контакты</a>
+                </nav>
+            </div>
+            <div class="header-right flex ai-center">
+                <div class="header-search">
+                    <form>
+                        <input type="text" class="fs-11 tt-upper"  placeholder="Поиск...">
+                        <button type="submit">
+                            <img src="images/Search.png" alt="search">
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div> <!-- /.header-inner -->
+    </div> <!-- /.container -->
+</header>
+
+<!-- Intro -->
+<div class="intro catalog flex">
+    <div class="container">
+        <div class="intro-inner catalog flex w-100">
+            <div class="intro-artist w-100 flex">
+                <div class="artist-name fs-60 fw-bold tt-upper w-100">
+                    Morten Harket
+                </div>
+                <div class="artist-fans fs-18 w-100">
+                    24 875 поклонников
+                </div>
+                <div class="intro-buttons w-100">
+                    <button class="btn btn-mix fs-14 tt-upper" type="submit">
+                        <div class="btn-content">
+                            <img src="images/play-button.svg" alt="mix"><span>Микс</span>
+                        </div>
+                    </button>
+                    <button class="btn btn-fav fs-14 tt-upper" type="submit">
+                        <div class="btn-content">
+                            <img src="images/heart.svg" alt="fav"><span>В избранное</span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div> <!-- /.intro-inner -->
+    </div> <!-- /.container -->
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-inner flex">
+
+        <div class="footer-info flex">
+            <div class="footer-info-inner container flex">
+
+                <div class="footer-info-item ai-center">
+                    <h2 class="footer-info-title fs-18 fw-bold">
+                        О нас
+                    </h2>
+                    <ul class="footer-list">
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link fs-16 td-none">
+                                История компании
+                            </a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link fs-16 td-none">
+                                Карьера
+                            </a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link fs-16 td-none">
+                                Обязанности
+                            </a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link fs-16 td-none">
+                                Пресса
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-info-item ai-center">
+                    <h2 class="footer-info-title fs-18 fw-bold">
+                        Поддержка
+                    </h2>
+                    <ul class="footer-list">
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link fs-16 td-none">
+                                База знаний
+                            </a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link fs-16 td-none">
+                                Тарифы
+                            </a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link fs-16 td-none">
+                                Мобильное приложение
+                            </a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link fs-16 td-none">
+                                Условия использования
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-info-item ai-center">
+                    <h2 class="footer-info-title fs-18 fw-bold">
+                        Контакты
+                    </h2>
+                    <ul class="footer-list">
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link fs-16 td-none">
+                                hello@music.box
+                            </a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link fs-16 td-none">
+                                Russia, Moscow. Music Box studio
+                            </a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link fs-16 td-none">
+                                Мобильное приложение
+                            </a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link fs-16 td-none">
+                                + 7 499 999 99 99
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-info-item ai-center">
+                    <h2 class="footer-info-title fs-18 fw-bold">
+                        Подписывайтесь
+                    </h2>
+                        <a href="#" class="footer-list-social fs-16 td-none">
+                            <img src="images/Google+.png" alt="google">
+                        </a>
+                        <a href="#" class="footer-list-social fs-16 td-none">
+                            <img src="images/Facebook.png" alt="facebook">
+                        </a>
+                        <a href="#" class="footer-list-social fs-16 td-none">
+                            <img src="images/Twitter.png" alt="twitter">
+                        </a>
+                        <a href="#" class="footer-list-social fs-16 td-none">
+                            <img src="images/Instagram.png" alt="instagram">
+                        </a>
+                </div>
+
+            </div> <!-- /.container -->
+        </div> <!-- /.footer-info -->
+
+        <div class="footer-links">
+            <div class="footer-links-inner container flex">
+                <div class="footer-links-item ai-center">
+                    <a class="footer-list-link fs-16 td-none" href="#">Shop</a>
+                    <a class="footer-list-link fs-16 td-none" href="#">Service</a>
+                    <a class="footer-list-link fs-16 td-none" href="#">Journal</a>
+                    <a class="footer-list-link fs-16 td-none" href="#">About</a>
+                    <a class="footer-list-link fs-16 td-none" href="#">Support</a>
+                </div>
+
+                <div class="footer-links-item ai-center">
+                    <span class="footer-copyright fs-14">© 2011 — 2020 Music Box Inc.</span>
+                </div>
+
+            </div> <!-- /.container -->
+        </div> <!-- /.footer-links -->
+
+    </div> <!-- /.footer-inner -->
+</footer>
 
 </body>
 </html>

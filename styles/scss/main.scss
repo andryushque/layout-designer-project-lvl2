@@ -89,7 +89,6 @@
 
     border: 4px solid $white;
     border-radius: .4rem;
-    outline: none;
     background-color: transparent;
     color: $white;
 
@@ -201,7 +200,6 @@
     margin-bottom: 2rem;
 
     border: 1px solid $white;
-    outline: none;
     background-color: transparent;
     color: $white;
 
@@ -250,10 +248,8 @@
     box-sizing: border-box;
     width: 16rem;
     height: 5rem;
-
-    border-radius: 5rem;
     border: none;
-    outline: none;
+    border-radius: 5rem;
     background-color: $pink;
     color: $white;
 

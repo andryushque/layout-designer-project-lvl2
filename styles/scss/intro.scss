@@ -4,18 +4,36 @@
 /*=====  Intro  =====*/
 
 .intro {
-    height: 100vh; // по высоте экрана
-    background: url(../images/banner.png) center 75% no-repeat;
     background-size: cover;
     align-items: center;
+
+    &.index {
+        height: 100vh;
+        background: url(../images/banner.png) center 75% no-repeat;
+    }
+
+    &.catalog {
+        height: 54rem;
+        background: url(../images/Morten%20Harket.png) center 75% no-repeat;
+    }
 }
 
 .intro-inner {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    &.index {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    &.catalog {
+        justify-content: flex-end;
+        width: 120rem;
+    }
 }
+
+
+/*=====  Index  =====*/
 
 .intro-info {
     width: 100%;
@@ -79,12 +97,61 @@
     width: 57rem;
     height: 5rem;
     border: 1px solid $green;
-    outline: none;
     background-color: $green;
     color: $white;
 
     &:focus, &:hover {
         cursor: pointer;
         box-shadow: 0 0 2px $white;
+    }
+}
+
+
+/*=====  Catalog =====*/
+
+.intro-artist {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20rem;
+}
+
+.artist-name {
+    margin-bottom: 2rem;
+}
+
+.artist-fans {
+    margin-bottom: 4rem;
+}
+
+.intro-buttons {
+    button {
+        box-sizing: border-box;
+        width: 20rem;
+        height: 5rem;
+        border: none;
+        color: $white;
+        text-align: left;
+        &.btn-mix {
+            margin-right: 2rem;
+            background: $purple;
+        }
+
+        &.btn-fav {
+            background: $orange;
+        }
+
+        .btn-content {
+            position: relative;
+            img {
+                position: absolute;
+                top: -.3rem;
+                left: 2rem;
+                height: 2rem;
+                filter: invert(1);
+            }
+            span {
+                margin-left: 5.5rem;
+            }
+        }
     }
 }

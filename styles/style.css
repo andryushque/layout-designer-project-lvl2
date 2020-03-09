@@ -65,23 +65,30 @@
     position: absolute;
     background: none;
     border: none;
-    outline: none;
     top: .7rem;
     right: .7rem; }
 
 /*=====  Intro  =====*/
 .intro {
-  height: 100vh;
-  background: url(../images/banner.png) center 75% no-repeat;
   background-size: cover;
   align-items: center; }
+  .intro.index {
+    height: 100vh;
+    background: url(../images/banner.png) center 75% no-repeat; }
+  .intro.catalog {
+    height: 54rem;
+    background: url(../images/Morten%20Harket.png) center 75% no-repeat; }
 
-.intro-inner {
+.intro-inner.index {
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center; }
+.intro-inner.catalog {
+  justify-content: flex-end;
+  width: 120rem; }
 
+/*=====  Index  =====*/
 .intro-info {
   width: 100%;
   padding: 0 2rem; }
@@ -129,12 +136,46 @@
   width: 57rem;
   height: 5rem;
   border: 1px solid #34C176;
-  outline: none;
   background-color: #34C176;
   color: #FFF; }
   .intro-button:focus, .intro-button:hover {
     cursor: pointer;
     box-shadow: 0 0 2px #FFF; }
+
+/*=====  Catalog =====*/
+.intro-artist {
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20rem; }
+
+.artist-name {
+  margin-bottom: 2rem; }
+
+.artist-fans {
+  margin-bottom: 4rem; }
+
+.intro-buttons button {
+  box-sizing: border-box;
+  width: 20rem;
+  height: 5rem;
+  border: none;
+  color: #FFF;
+  text-align: left; }
+  .intro-buttons button.btn-mix {
+    margin-right: 2rem;
+    background: #5328A1; }
+  .intro-buttons button.btn-fav {
+    background: #95390C; }
+  .intro-buttons button .btn-content {
+    position: relative; }
+    .intro-buttons button .btn-content img {
+      position: absolute;
+      top: -.3rem;
+      left: 2rem;
+      height: 2rem;
+      filter: invert(1); }
+    .intro-buttons button .btn-content span {
+      margin-left: 5.5rem; }
 
 /*=====  Main  =====*/
 .main {
@@ -199,7 +240,6 @@
   margin-bottom: 5rem;
   border: 4px solid #FFF;
   border-radius: .4rem;
-  outline: none;
   background-color: transparent;
   color: #FFF; }
   .subscription-button:focus, .subscription-button:hover {
@@ -278,7 +318,6 @@
   height: 4rem;
   margin-bottom: 2rem;
   border: 1px solid #FFF;
-  outline: none;
   background-color: transparent;
   color: #FFF; }
   .news-button:focus, .news-button:hover {
@@ -314,9 +353,8 @@
   box-sizing: border-box;
   width: 16rem;
   height: 5rem;
-  border-radius: 5rem;
   border: none;
-  outline: none;
+  border-radius: 5rem;
   background-color: #FF4157;
   color: #FFF; }
   .application-button button:focus, .application-button button:hover {
@@ -410,7 +448,8 @@ p {
   width: 100%; }
 
 .btn {
-  font-family: "MyriadPro", sans-serif; }
+  font-family: "MyriadPro", sans-serif;
+  outline: none; }
 
 /*===== Text styles =====*/
 .tt-upper {
@@ -435,7 +474,7 @@ p {
   font-size: 1.2rem; }
 
 .fs-14 {
-  font-size: 1.2rem; }
+  font-size: 1.4rem; }
 
 .fs-16 {
   font-size: 1.6rem; }
