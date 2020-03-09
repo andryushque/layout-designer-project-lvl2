@@ -12,9 +12,16 @@
   height: 100%;
   padding: 0; }
 
+.header-left {
+  width: 50%;
+  justify-content: space-between; }
+
+.header-nav {
+  margin-right: 7.5rem; }
+
 .header-logo-image img {
   height: 2rem;
-  margin-right: 1rem; }
+  margin-right: .5rem; }
 
 .header-logo-title .header-link {
   color: #FFF; }
@@ -29,6 +36,10 @@
   .header-link:hover {
     color: #FFF;
     transition: color .2s ease; }
+
+.header-right {
+  width: 50%;
+  justify-content: flex-end; }
 
 .header-search {
   background: #3C3B3D;
@@ -349,7 +360,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'MyriadPro', sans-serif;
+  font-family: "MyriadPro", sans-serif;
   color: #FFF;
   background-color: #08020D;
   position: relative; }
@@ -420,5 +431,14 @@ p {
 
 .fs-60 {
   font-size: 6rem; }
+
+/*
+1280px
+1024px
+768px
+425px
+375px
+320px
+*/
 
 /*# sourceMappingURL=style.css.map */
