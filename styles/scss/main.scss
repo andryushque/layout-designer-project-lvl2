@@ -112,9 +112,12 @@
 /*=====  News  =====*/
 
 .main-news {
+    flex-wrap: wrap;
+    justify-content: center;
     margin-bottom: 10rem;
 
     .item-title {
+        width: 100%;
         margin-bottom: 6.3rem;
     }
 }
@@ -122,6 +125,7 @@
 .news {
     width: 100%;
     flex-direction: column;
+    justify-content: center;
 }
 
 .news-item {
@@ -211,14 +215,18 @@
 /*=====  Application  =====*/
 
 .main-application {
+    flex-wrap: wrap;
+    justify-content: center;
     margin-bottom: 10rem;
 
     .item-title {
+        width: 100%;
         margin-bottom: 10rem;
     }
 }
 
 .application {
+    width: 100%;
     justify-content: space-between;
 }
 
@@ -238,7 +246,7 @@
     justify-content: center;
 }
 
-.application-button {
+.application-button button {
     box-sizing: border-box;
     width: 16rem;
     height: 5rem;

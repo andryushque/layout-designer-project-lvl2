@@ -12,18 +12,48 @@
     }
 
     /*=====  Subscriptions  =====*/
-    .main-subscribe {
-        justify-content: center;
-    }
     .subscriptions {
         width: 95%;
-        justify-content: space-between;
     }
     .subscription {
         width: 30%;
     }
     .subscription-button {
         width: 80%;
+    }
+
+    /*=====  News  =====*/
+    .news {
+        width: 95%;
+    }
+    .news-item {
+        justify-content: space-around;
+    }
+    .news-item:nth-child(odd) {
+        .news-block:nth-child(even) {
+            .news-inner {
+                width: 95%;
+                margin-left: 5rem;
+            }
+        }
+    }
+    .news-item:nth-child(even) {
+        .news-block:nth-child(odd) {
+            .news-inner {
+                width: 95%;
+            }
+        }
+    }
+    .news-block {
+        width: 50%;
+    }
+    .news-image img {
+        width: 100%;
+    }
+
+    /*=====  Application  =====*/
+    .application {
+        width: 95%;
     }
 
     /*=====  Footer  =====*/
@@ -73,6 +103,30 @@
     }
     .subscription-button {
         font-size: 2rem;
+    }
+
+    /*=====  News  =====*/
+    .main-news {
+        .item-title {
+            margin-bottom: 5rem;
+        }
+    }
+    .album-release {
+        margin-bottom: 2rem;
+    }
+
+    /*=====  Application  =====*/
+    .main-application {
+        .item-title {
+            margin-bottom: 5rem;
+        }
+    }
+    .application-info {
+        width: 50%;
+    }
+    .application-image {
+        width: 50%;
+        justify-content: flex-end;
     }
 
     /*=====  Footer  =====*/
@@ -155,6 +209,9 @@
             margin-bottom: 3rem;
         }
     }
+    .main-item {
+        margin-bottom: 5rem;
+    }
     .subscriptions {
         flex-wrap: wrap;
         justify-content: center;
@@ -168,6 +225,64 @@
         &:last-child {
             margin-bottom: 0;
         }
+    }
+    .album-release {
+        justify-content: center;
+    }
+
+    /*=====  News  =====*/
+    .news-item {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .news-item:nth-child(odd) {
+        .news-block:nth-child(even) {
+            .news-inner {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+    }
+    .news-item:nth-child(even) {
+        .news-block:nth-child(odd) {
+            order: 2;
+            .news-inner {
+                width: 100%;
+            }
+        }
+    }
+    .news-block {
+        width: 100%;
+        text-align: center;
+    }
+    .album-info {
+        margin-bottom: 1rem;
+        line-height: 1.1;
+    }
+
+    /*=====  Application  =====*/
+    .main-application {
+        margin-bottom: 5rem;
+    }
+    .application {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .application-info {
+        width: 100%;
+        margin-bottom: 4rem;
+        text-align: center;
+        p:first-child {
+            margin-bottom: 1.5rem;
+        }
+    }
+    .application-image {
+        width: 100%;
+        justify-content: center;
+    }
+    .application-button {
+        width: 100%;
+        justify-content: center;
     }
 
     /*=====  Footer  =====*/
@@ -258,6 +373,16 @@
     /*=====  Subscriptions  =====*/
     .subscriptions {
         width: 100%;
+    }
+
+    /*=====  News  =====*/
+    .main-news {
+        .item-title {
+            width: 90%;
+        }
+    }
+    .news-image img {
+        width: 100vw;
     }
 
     /*=====  Footer  =====*/
