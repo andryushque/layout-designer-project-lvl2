@@ -1,18 +1,152 @@
 @import "variables";
 
-/*
-1280px
-1024px
-768px
-425px
-375px
-320px
-*/
+/* 1280px 1024px 768px (565px) 425p 375px 320px */
 
 @media (max-width : 1280px) {
-    //
+    /*=====  Header  =====*/
+    .header-inner {
+        padding: 0 2rem;
+    }
+    .header-nav {
+        margin-right: 0;
+    }
 }
 
 @media (max-width : 1024px) {
-    //
+    /*=====  Header  =====*/
+    .header-left {
+        width: 60%;
+    }
+    .header-right {
+        width: 40%;
+    }
+    .header-link {
+        margin-left: 2rem;
+    }
+    .header-search form input {
+        width: 22rem;
+    }
+}
+
+@media (max-width : 768px) {
+    /*=====  Header  =====*/
+    .header-inner {
+        flex-wrap: wrap;
+    }
+    .header-left {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .header-right {
+        width: 100%;
+    }
+    .header-search form input {
+        width: 28.1rem;
+    }
+
+    /*=====  Intro  =====*/
+    .intro-title {
+        width: 80vw;
+        font-size: 4.5rem;
+    }
+    .intro-subtitle {
+        width: 80vw;
+        font-size: 2.2rem;
+    }
+    .intro-inner {
+        width: 80vw;
+    }
+    .intro-text {
+        margin-bottom: 2rem;
+        font-size: 1.6rem;
+    }
+    .intro-form {
+        width: 100vw;
+        justify-content: center;
+    }
+    .form-item {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0;
+
+        input {
+            width: 80vw;
+            margin-bottom: 1rem
+        }
+    }
+    .intro-button {
+        width: 80vw;
+        // max-width: 57rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width : 565px) {
+    /*=====  Header  =====*/
+    .header {
+        background: rgba($black, .7);
+        height: auto;
+        margin-top: 0;
+    }
+    .header-left {
+        width: 100%;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+    .header-right {
+        width: 100%;
+        justify-content: flex-start;
+        margin-bottom: 1rem;
+    }
+    .header-logo {
+        width: 100%;
+        margin: 1rem 0;
+    }
+    .header-nav {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .header-link {
+        width: 100%;
+        margin: 0 0 1rem;
+    }
+    .header-search form input {
+        width: 100%;
+    }
+
+    /*=====  Intro  =====*/
+    .intro-title {
+        padding-top: 15rem;
+        font-size: 3.6rem;
+    }
+    .intro-subtitle {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width : 425px) {
+    /*=====  Intro  =====*/
+    .intro-title {
+        font-size: 3rem;
+        line-height: 1;
+    }
+    .intro-subtitle {
+        font-size: 1.5rem;
+        line-height: 1;
+    }
+    .intro-text {
+        font-size: 1.4rem;
+        line-height: 1;
+    }
+}
+
+@media (max-width : 375px) {
+    /*=====  Intro  =====*/
+    .intro-title {
+        font-size: 2.8rem;
+    }
+    .intro-subtitle {
+        font-size: 1.4rem;
+    }
 }

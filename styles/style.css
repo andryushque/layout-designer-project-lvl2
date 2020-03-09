@@ -47,20 +47,20 @@
   .header-search form {
     width: auto;
     position: relative; }
-  .header-search input {
-    box-sizing: border-box;
-    width: 28.1rem;
-    height: 3.1rem;
-    margin-left: 1.3rem;
-    border-radius: 3.1rem;
-    background: #3C3B3D;
-    border: none;
-    outline: none; }
-    .header-search input:focus {
-      color: gray;
-      font-size: 1.6rem; }
-      .header-search input:focus::placeholder {
-        color: transparent; }
+    .header-search form input {
+      box-sizing: border-box;
+      width: 28.1rem;
+      height: 3.1rem;
+      margin-left: 1.3rem;
+      border-radius: 3.1rem;
+      background: #3C3B3D;
+      border: none;
+      outline: none; }
+      .header-search form input:focus {
+        color: gray;
+        font-size: 1.6rem; }
+        .header-search form input:focus::placeholder {
+          color: transparent; }
   .header-search button {
     position: absolute;
     background: none;
@@ -82,16 +82,24 @@
   justify-content: center;
   text-align: center; }
 
+.intro-info {
+  width: 100%;
+  padding: 0 2rem; }
+
 .intro-title {
+  width: 100%;
   margin-bottom: 1.5rem;
-  line-height: 4.8rem; }
+  line-height: 1.1; }
 
 .intro-subtitle {
-  margin-bottom: 5rem; }
+  width: 100%;
+  margin-bottom: 4.5rem;
+  line-height: 1.1; }
 
 .intro-text {
+  width: 100%;
   margin-bottom: 4rem;
-  line-height: 3rem; }
+  line-height: 1.1; }
 
 .intro-form {
   width: 57rem;
@@ -223,13 +231,13 @@
   width: 45rem; }
 
 .news-content {
-  max-width: 50%;
-  width: 60rem;
+  width: 50%;
+  max-width: 60rem;
   text-align: left; }
 
 .news-image {
-  max-width: 50%;
-  width: 57rem; }
+  width: 50%;
+  max-width: 57rem; }
 
 .album-title {
   margin-top: 1rem;
@@ -432,13 +440,132 @@ p {
 .fs-60 {
   font-size: 6rem; }
 
-/*
-1280px
-1024px
-768px
-425px
-375px
-320px
-*/
+/* 1280px 1024px 768px (565px) 425p 375px 320px */
+@media (max-width: 1280px) {
+  /*=====  Header  =====*/
+  .header-inner {
+    padding: 0 2rem; }
+
+  .header-nav {
+    margin-right: 0; } }
+@media (max-width: 1024px) {
+  /*=====  Header  =====*/
+  .header-left {
+    width: 60%; }
+
+  .header-right {
+    width: 40%; }
+
+  .header-link {
+    margin-left: 2rem; }
+
+  .header-search form input {
+    width: 22rem; } }
+@media (max-width: 768px) {
+  /*=====  Header  =====*/
+  .header-inner {
+    flex-wrap: wrap; }
+
+  .header-left {
+    width: 100%;
+    margin-bottom: 2rem; }
+
+  .header-right {
+    width: 100%; }
+
+  .header-search form input {
+    width: 28.1rem; }
+
+  /*=====  Intro  =====*/
+  .intro-title {
+    width: 80vw;
+    font-size: 4.5rem; }
+
+  .intro-subtitle {
+    width: 80vw;
+    font-size: 2.2rem; }
+
+  .intro-inner {
+    width: 80vw; }
+
+  .intro-text {
+    margin-bottom: 2rem;
+    font-size: 1.6rem; }
+
+  .intro-form {
+    width: 100vw;
+    justify-content: center; }
+
+  .form-item {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0; }
+    .form-item input {
+      width: 80vw;
+      margin-bottom: 1rem; }
+
+  .intro-button {
+    width: 80vw;
+    margin-bottom: 1rem; } }
+@media (max-width: 565px) {
+  /*=====  Header  =====*/
+  .header {
+    background: rgba(8, 2, 13, 0.7);
+    height: auto;
+    margin-top: 0; }
+
+  .header-left {
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 0; }
+
+  .header-right {
+    width: 100%;
+    justify-content: flex-start;
+    margin-bottom: 1rem; }
+
+  .header-logo {
+    width: 100%;
+    margin: 1rem 0; }
+
+  .header-nav {
+    width: 100%;
+    flex-wrap: wrap; }
+
+  .header-link {
+    width: 100%;
+    margin: 0 0 1rem; }
+
+  .header-search form input {
+    width: 100%; }
+
+  /*=====  Intro  =====*/
+  .intro-title {
+    padding-top: 15rem;
+    font-size: 3.6rem; }
+
+  .intro-subtitle {
+    font-size: 1.8rem; } }
+@media (max-width: 425px) {
+  /*=====  Intro  =====*/
+  .intro-title {
+    font-size: 3rem;
+    line-height: 1; }
+
+  .intro-subtitle {
+    font-size: 1.5rem;
+    line-height: 1; }
+
+  .intro-text {
+    font-size: 1.4rem;
+    line-height: 1; } }
+@media (max-width: 375px) {
+  /*=====  Intro  =====*/
+  .intro-title {
+    font-size: 2.8rem; }
+
+  .intro-subtitle {
+    font-size: 1.4rem; } }
 
 /*# sourceMappingURL=style.css.map */
