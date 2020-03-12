@@ -88,7 +88,7 @@
   justify-content: flex-end;
   width: 120rem; }
 
-/*=====  Index  =====*/
+/*=====  Index intro =====*/
 .intro-info {
   width: 100%; }
 
@@ -141,7 +141,7 @@
     cursor: pointer;
     box-shadow: 0 0 2px #FFF; }
 
-/*=====  Catalog =====*/
+/*=====  Catalog intro =====*/
 .intro-artist {
   flex-wrap: wrap;
   justify-content: center;
@@ -175,14 +175,17 @@
       filter: invert(1); }
     .intro-buttons button .btn-content span {
       margin-left: 5.5rem; }
+  .intro-buttons button:focus, .intro-buttons button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 2px #FFF; }
 
-/*=====  Main  =====*/
-.main {
+/*=====  Main Index =====*/
+.main.index {
   background: #08020D;
   text-align: center;
   padding-top: 10rem; }
 
-.main-inner {
+.main-inner.index {
   flex-direction: column; }
 
 /*=====  Subscriptions  =====*/
@@ -360,9 +363,117 @@
     cursor: pointer;
     box-shadow: 0 0 2px #FFF; }
 
+/*=====  Main Catalog =====*/
+.main.catalog {
+  background: #08020D;
+  text-align: center;
+  padding-top: 10rem; }
+
+.main-inner.catalog {
+  flex-direction: column; }
+  .main-inner.catalog .main-item {
+    margin-bottom: 10rem;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .main-inner.catalog .main-item .item-title {
+      width: 100%;
+      margin-bottom: 5rem;
+      text-align: left; }
+
+.main-block {
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-start; }
+
+/*=====  Popular  =====*/
+.popular-track {
+  width: 50%;
+  justify-content: space-between; }
+  .popular-track:nth-child(-n+4) {
+    margin-bottom: 2.5rem; }
+
+.track-data {
+  justify-content: flex-start; }
+
+.track-cover {
+  margin-right: 1.5rem; }
+  .track-cover img {
+    width: 5rem;
+    height: 5rem; }
+
+.track-info {
+  flex-direction: column;
+  justify-content: center;
+  text-align: left; }
+  .track-info .track-name {
+    margin-bottom: .5rem; }
+  .track-info .track-artist {
+    color: #808080; }
+
+.track-length {
+  margin-right: 12.3rem;
+  align-items: center;
+  color: #8C8C8C; }
+
+/*=====  Didcography  =====*/
+.discography-album {
+  width: 25rem;
+  margin-right: 5rem;
+  justify-content: flex-start; }
+  .discography-album:nth-child(-n+4) {
+    margin-bottom: 5rem; }
+  .discography-album:nth-child(4n) {
+    margin-bottom: 0; }
+
+.album-data {
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left; }
+
+.album-cover {
+  width: 100%;
+  margin-bottom: 1rem; }
+  .album-cover img {
+    width: 25rem;
+    height: 25rem; }
+
+.album-name {
+  width: 100%;
+  margin-bottom: 1rem; }
+
+.album-year {
+  width: 100%; }
+
+/*=====  Similar  =====*/
+.similar-artist {
+  width: 25rem;
+  margin-right: 5rem;
+  justify-content: flex-start; }
+  .similar-artist:nth-child(-n+4) {
+    margin-bottom: 5rem; }
+  .similar-artist:nth-child(4n) {
+    margin-right: 0; }
+
+.artist-data {
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center; }
+  .artist-data .artist-name {
+    width: 100%;
+    margin-bottom: 1rem; }
+  .artist-data .artist-fans {
+    margin-bottom: 0; }
+
+.artist-photo {
+  width: 100%;
+  margin-bottom: 1.5rem; }
+  .artist-photo img {
+    width: 25rem;
+    height: 25rem; }
+
 /*=====  Footer  =====*/
 .footer {
-  background: linear-gradient(45deg, #5328A1, #95390C);
+  background: linear-gradient(90deg, #5328A1, #95390C);
   color: #CACACA; }
 
 .footer-inner {
@@ -375,7 +486,7 @@
 .footer-info-inner {
   width: 100%;
   justify-content: space-between;
-  padding: 9.2rem 0; }
+  padding: 8rem 0 10rem; }
 
 .footer-info-title {
   margin-bottom: 3rem; }
@@ -386,7 +497,7 @@
   margin: 0; }
 
 .footer-list-item {
-  margin-bottom: 2.1rem; }
+  margin-bottom: 2rem; }
   .footer-list-item:last-child {
     margin-bottom: 0; }
 
@@ -404,7 +515,7 @@
 .footer-links-inner {
   width: 100%;
   justify-content: space-between;
-  padding: 4rem 0; }
+  padding: 5rem 0; }
   .footer-links-inner .footer-list-link {
     margin: 0;
     margin-right: 4rem; }
@@ -420,7 +531,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "MyriadPro", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #FFF;
   background-color: #08020D;
   position: relative; }
@@ -447,7 +558,7 @@ p {
   width: 100%; }
 
 .btn {
-  font-family: "MyriadPro", sans-serif;
+  font-family: "Roboto", sans-serif;
   outline: none; }
 
 /*===== Text styles =====*/
@@ -480,6 +591,9 @@ p {
 
 .fs-18 {
   font-size: 1.8rem; }
+
+.fs-20 {
+  font-size: 2rem; }
 
 .fs-22 {
   font-size: 2.2rem; }

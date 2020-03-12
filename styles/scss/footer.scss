@@ -4,7 +4,7 @@
 /*=====  Footer  =====*/
 
 .footer {
-    background: linear-gradient(45deg, $purple, $orange);
+    background: linear-gradient(90deg, $purple, $orange);
     color: #CACACA;
 }
 
@@ -20,7 +20,7 @@
 .footer-info-inner {
     width: 100%;
     justify-content: space-between;
-    padding: 9.2rem 0;
+    padding: 8rem 0 10rem;
 }
 
 .footer-info-title {
@@ -34,7 +34,7 @@
 }
 
 .footer-list-item {
-    margin-bottom: 2.1rem;
+    margin-bottom: 2rem;
     &:last-child {
         margin-bottom: 0;
     }
@@ -58,7 +58,7 @@
 .footer-links-inner {
     width: 100%;
     justify-content: space-between;
-    padding: 4rem 0;
+    padding: 5rem 0;
 
     .footer-list-link {
         margin: 0;

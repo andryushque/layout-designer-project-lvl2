@@ -33,7 +33,7 @@
 }
 
 
-/*=====  Index  =====*/
+/*=====  Index intro =====*/
 
 .intro-info {
     width: 100%;
@@ -106,7 +106,7 @@
 }
 
 
-/*=====  Catalog =====*/
+/*=====  Catalog intro =====*/
 
 .intro-artist {
     flex-wrap: wrap;
@@ -151,6 +151,11 @@
             span {
                 margin-left: 5.5rem;
             }
+        }
+
+        &:focus, &:hover {
+            cursor: pointer;
+            box-shadow: 0 0 2px $white;
         }
     }
 }

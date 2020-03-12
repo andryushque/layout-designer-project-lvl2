@@ -1,15 +1,15 @@
 @import "variables";
 
 
-/*=====  Main  =====*/
+/*=====  Main Index =====*/
 
-.main {
+.main.index {
     background: $black;
     text-align: center;
     padding-top: 10rem;
 }
 
-.main-inner {
+.main-inner.index {
     flex-direction: column;
 }
 
