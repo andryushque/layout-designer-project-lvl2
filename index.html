@@ -9,30 +9,30 @@
 <body>
 
 <!-- Header -->
-<header class="header">
+<header class="header w-100">
     <div class="container">
-        <div class="header-inner flex ai-center">
-            <div class="header-left flex ai-center">
-                <div class="header-logo flex ai-center">
+        <div class="header-inner d-flex ai-center">
+            <div class="header-left d-flex ai-center">
+                <div class="header-logo d-flex ai-center">
                     <div class="header-logo-image">
                         <img src="images/logo.svg" alt="logo">
                     </div>
-                    <div class="header-logo-title fw-bold fs-11 tt-upper">
+                    <div class="header-logo-title fw-bold fz-11 tt-upper">
                         <a class="header-link td-none" href="#">Music Box</a>
                     </div>
                 </div>
 
-                <nav class="header-nav flex fs-11 tt-upper">
+                <nav class="header-nav d-flex fz-11 tt-upper">
                     <a class="header-link td-none active" href="#">Главная</a>
                     <a class="header-link td-none" href="catalog.html">Каталог</a>
                     <a class="header-link td-none" href="#">Исполнители</a>
                     <a class="header-link td-none" href="#">Контакты</a>
                 </nav>
             </div>
-            <div class="header-right flex ai-center">
+            <div class="header-right d-flex ai-center">
                 <div class="header-search">
                     <form>
-                        <input type="text" class="fs-11 tt-upper"  placeholder="Поиск...">
+                        <input type="text" class="fz-11 tt-upper"  placeholder="Поиск...">
                         <button type="submit">
                             <img src="images/Search.png" alt="search">
                         </button>
@@ -46,22 +46,22 @@
 
 
 <!-- Intro -->
-<div class="intro index flex">
+<div class="intro index d-flex ai-center">
     <div class="container">
-        <div class="intro-inner index flex w-100">
-            <div class="intro-info">
-                <h1 class="intro-title fw-bold fs-60 tt-upper">Онлайн музыка где угодно</h1>
-                <h3 class="intro-subtitle fw-bold fs-30 tt-upper">без ограничений</h3>
-                <p class="intro-text fs-18">Получите доступ всего за несколько шагов. Заполните форму ниже</p>
+        <div class="intro-inner index d-flex w-100 ai-center column">
+            <div class="intro-info w-100">
+                <h1 class="intro-title fw-bold fz-60 tt-upper w-100">Онлайн музыка где угодно</h1>
+                <h3 class="intro-subtitle fw-bold fz-30 tt-upper w-100">без ограничений</h3>
+                <p class="intro-text fz-18 w-100">Получите доступ всего за несколько шагов. Заполните форму ниже</p>
             </div>
 
-            <form class="intro-form">
-                <div class="form-item flex fs-14">
+            <form class="intro-form column">
+                <div class="form-item d-flex fz-14">
                     <input class="form-input" type="text" id="input-name" placeholder="Имя">
                     <input class="form-input" type="text" id="input-email" placeholder="Email">
                 </div>
 
-                <button class="intro-button btn fs-14 tt-upper" type="submit">
+                <button class="intro-button btn fz-14 tt-upper" type="submit">
                     Получить доступ
                 </button>
             </form>
@@ -74,134 +74,158 @@
 <!-- Main Index -->
 <div class="main index">
     <div class="container">
-        <div class="main-inner index flex">
-            <div class="main-item main-subscribe flex">
-                <h2 class="item-title fw-bold fs-38 tt-upper">Формы подписки</h2>
+        <div class="main-inner index d-flex column">
+            <div class="main-item main-subscribe d-flex mb-100">
+                <h2 class="item-title fw-bold fz-38 tt-upper w-100 mb-50">Формы подписки</h2>
 
-                <div class="subscriptions flex">
-                    <div class="subscription free">
-                        <div class="subscription-type fs-24 tt-upper">
+                <div class="subscriptions d-flex w-100">
+                    <div class="subscription free d-flex column">
+                        <div class="subscription-type fz-24 tt-upper w-100 mt-25">
                             Бесплатная
                         </div>
-                        <div class="subscription-price flex fs-60 tt-upper">
-                            <span>0 </span><span class="fs-30">руб.</span>
-                        </div>
-                        <button class="subscription-button btn fs-24 tt-upper" type="submit">
-                            Оформить
-                        </button>
-                        <div class="subscription-info fs-12">
-                            Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей ко всей коллекции музыки. Присутствует реклама
+                        <div class="subscription-bottom d-flex column w-100 mb-50">
+                            <div class="subscription-price d-flex fz-60 tt-upper w-100">
+                                <span>0 </span><span class="fz-30">руб.</span>
+                            </div>
+
+                            <div class="subscription-button d-flex mb-50">
+                                <button class="btn fz-24 tt-upper" type="submit">
+                                    Оформить
+                                </button>
+                            </div>
+
+                            <div class="subscription-info fz-12 w-100">
+                                <p>
+                                    Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей ко всей коллекции музыки. Присутствует реклама
+                                </p>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="subscription standart">
-                        <div class="subscription-type fs-24 tt-upper">
+                    <div class="subscription standart d-flex column">
+                        <div class="subscription-type fz-24 tt-upper w-100 mt-25">
                             Стандартная
                         </div>
-                        <div class="subscription-price flex fs-60 tt-upper">
-                            <span>250 </span><span class="fs-30">руб.</span>
-                        </div>
-                        <button class="subscription-button btn fs-24 tt-upper" type="submit">
-                            Оформить
-                        </button>
-                        <div class="subscription-info fs-12">
-                            Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции музыки в среднем качестве
+                        <div class="subscription-bottom d-flex column w-100 mb-50">
+                            <div class="subscription-price d-flex fz-60 tt-upper w-100">
+                                <span>250 </span><span class="fz-30">руб.</span>
+                            </div>
+
+                            <div class="subscription-button d-flex mb-50">
+                                <button class="btn fz-24 tt-upper" type="submit">
+                                    Оформить
+                                </button>
+                            </div>
+
+                            <div class="subscription-info fz-12 w-100">
+                                <p>
+                                    Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции музыки в среднем качестве
+                                </p>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="subscription premium">
-                        <div class="subscription-type fs-24 tt-upper">
+                    <div class="subscription premium d-flex column">
+                        <div class="subscription-type fz-24 tt-upper w-100 mt-25">
                             Премиум
                         </div>
-                        <div class="subscription-price flex fs-60 tt-upper">
-                            <span>500 </span><span class="fs-30">руб.</span>
-                        </div>
-                        <button class="subscription-button btn fs-24 tt-upper" type="submit">
-                            Оформить
-                        </button>
-                        <div class="subscription-info fs-12">
-                            Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в высоком качестве
+                        <div class="subscription-bottom d-flex column w-100 mb-50">
+                            <div class="subscription-price d-flex fz-60 tt-upper w-100">
+                                <span>500 </span><span class="fz-30">руб.</span>
+                            </div>
+
+                            <div class="subscription-button d-flex mb-50">
+                                <button class="btn fz-24 tt-upper" type="submit">
+                                    Оформить
+                                </button>
+                            </div>
+
+                            <div class="subscription-info fz-12 w-100">
+                                <p>
+                                    Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в высоком качестве
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="item-info fs-22">
+                <div class="item-info fz-22 w-100">
                     На всех тарифах возможно прослушивание музыки с мобильных устройств. На премиум тарифе вы можете скачать все композиции на ваше устройство и слушать музыку без подключения к интернету
                 </div>
             </div>
 
-            <div class="main-item main-news flex">
-                <h2 class="item-title fw-bold fs-38 tt-upper">Последние новости</h2>
+            <div class="main-item main-news d-flex mb-100">
+                <h2 class="item-title fw-bold fz-38 tt-upper w-100 mb-50">Последние новости</h2>
 
-                <div class="news flex">
-                    <div class="news-item flex">
-                        <div class="news-block news-image">
+                <div class="news d-flex column w-100" >
+                    <div class="news-item d-flex w-100">
+                        <div class="news-block news-image w-50">
                             <img src="images/Music%20to%20Be%20Murdered%20By.png" alt="Eminem">
                         </div>
-                        <div class="news-block news-content flex">
+                        <div class="news-block news-content d-flex w-50">
                             <div class="news-inner">
-                                <div class="album-title fs-30">
+                                <div class="album-title fz-30 mb-25">
                                     Music to Be Murdered By
                                 </div>
 
-                                <div class="album-info fs-14">
+                                <div class="album-info fz-14">
                                     Новый альбом Eminem  «Music to Be Murdered By» уже доступен в нашем сервисе.  На альбоме вас ждёт 20 новых треков.
                                 </div>
-                                <div class="album-release flex fs-12">
+                                <div class="album-release d-flex fz-12 ai-center">
                                     <img src="images/Author.png" alt="Author">
                                     <span class="tt-upper">Music Box</span><span class="date">17/01/2020</span>
                                 </div>
-                                <button class="news-button btn fs-12 tt-upper" type="submit">
+                                <button class="news-button btn fz-12 tt-upper" type="submit">
                                     К альбому
                                 </button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="news-item flex">
-                        <div class="news-block news-content flex">
+                    <div class="news-item d-flex w-100">
+                        <div class="news-block news-content d-flex w-50">
                             <div class="news-inner">
-                                <div class="album-title fs-30">
+                                <div class="album-title fz-30 mb-25">
                                     Ordinary Man
                                 </div>
-                                <div class="album-info fs-14">
+                                <div class="album-info fz-14">
                                     Легенда рока Оззи Озборн спустя 10 лет выпустил новый альбом Ordinary Man. Слушайте в числе первых на Music Box
                                 </div>
-                                <div class="album-release flex fs-12">
+                                <div class="album-release d-flex fz-12 ai-center">
                                     <img src="images/Author.png" alt="Author">
                                     <span class="tt-upper">Music Box</span><span class="date">24/02/2020</span>
                                 </div>
-                                <button class="news-button btn fs-12 tt-upper" type="submit">
+                                <button class="news-button btn fz-12 tt-upper" type="submit">
                                     К альбому
                                 </button>
                             </div>
                         </div>
-                        <div class="news-block news-image">
+                        <div class="news-block news-image w-50">
                             <img src="images/Ordinary%20Man.png" alt="Ozzy">
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="main-item main-application flex">
-                <h2 class="item-title fw-bold fs-38 tt-upper">Мобильное приложение</h2>
+            <div class="main-item main-application d-flex mb-100">
+                <h2 class="item-title fw-bold fz-38 tt-upper w-100 mb-50">Мобильное приложение</h2>
 
-                <div class="application flex">
-                    <div class="application-info fs-16">
-                        <p>
+                <div class="application d-flex w-100">
+                    <div class="application-info fz-16">
+                        <p class="mb-25">
                             Воспользуйтесь нашим мобильным приложением. Оно позволит слушать музыку с любого устройства на базе операционных систем Androind и iOS
                         </p>
-                        <p>
+                        <p class="mb-25">
                             С тарифом «Премиум» приложение позволяет скачивать все композиции из нашей коллекции. Вы можете слушать музыку даже без интернета.
                         </p>
-                        <div class="application-button flex">
+                        <div class="application-button d-flex">
                             <button class="btn" type="submit">
                                 Get App
                             </button>
                         </div>
                     </div>
 
-                    <div class="application-image flex">
+                    <div class="application-image d-flex">
                         <img src="images/iphone.png" alt="Mobile">
                     </div>
                 </div>
@@ -215,33 +239,33 @@
 
 <!-- Footer -->
 <footer class="footer">
-    <div class="footer-inner flex">
+    <div class="footer-inner d-flex column">
 
-        <div class="footer-info flex">
-            <div class="footer-info-inner container flex">
+        <div class="footer-info d-flex w-100">
+            <div class="footer-info-inner container d-flex w-100">
 
                 <div class="footer-info-item ai-center">
-                    <h2 class="footer-info-title fs-18 fw-bold">
+                    <h2 class="footer-info-title fz-18 fw-bold">
                         О нас
                     </h2>
                     <ul class="footer-list">
                         <li class="footer-list-item">
-                            <a href="#" class="footer-list-link fs-16 td-none">
+                            <a href="#" class="footer-list-link fz-16 td-none">
                                 История компании
                             </a>
                         </li>
                         <li class="footer-list-item">
-                            <a href="#" class="footer-list-link fs-16 td-none">
+                            <a href="#" class="footer-list-link fz-16 td-none">
                                 Карьера
                             </a>
                         </li>
                         <li class="footer-list-item">
-                            <a href="#" class="footer-list-link fs-16 td-none">
+                            <a href="#" class="footer-list-link fz-16 td-none">
                                 Обязанности
                             </a>
                         </li>
                         <li class="footer-list-item">
-                            <a href="#" class="footer-list-link fs-16 td-none">
+                            <a href="#" class="footer-list-link fz-16 td-none">
                                 Пресса
                             </a>
                         </li>
@@ -249,27 +273,27 @@
                 </div>
 
                 <div class="footer-info-item ai-center">
-                    <h2 class="footer-info-title fs-18 fw-bold">
+                    <h2 class="footer-info-title fz-18 fw-bold">
                         Поддержка
                     </h2>
                     <ul class="footer-list">
                         <li class="footer-list-item">
-                            <a href="#" class="footer-list-link fs-16 td-none">
+                            <a href="#" class="footer-list-link fz-16 td-none">
                                 База знаний
                             </a>
                         </li>
                         <li class="footer-list-item">
-                            <a href="#" class="footer-list-link fs-16 td-none">
+                            <a href="#" class="footer-list-link fz-16 td-none">
                                 Тарифы
                             </a>
                         </li>
                         <li class="footer-list-item">
-                            <a href="#" class="footer-list-link fs-16 td-none">
+                            <a href="#" class="footer-list-link fz-16 td-none">
                                 Мобильное приложение
                             </a>
                         </li>
                         <li class="footer-list-item">
-                            <a href="#" class="footer-list-link fs-16 td-none">
+                            <a href="#" class="footer-list-link fz-16 td-none">
                                 Условия использования
                             </a>
                         </li>
@@ -277,27 +301,27 @@
                 </div>
 
                 <div class="footer-info-item ai-center">
-                    <h2 class="footer-info-title fs-18 fw-bold">
+                    <h2 class="footer-info-title fz-18 fw-bold">
                         Контакты
                     </h2>
                     <ul class="footer-list">
                         <li class="footer-list-item">
-                            <a href="#" class="footer-list-link fs-16 td-none">
+                            <a href="#" class="footer-list-link fz-16 td-none">
                                 hello@music.box
                             </a>
                         </li>
                         <li class="footer-list-item">
-                            <a href="#" class="footer-list-link fs-16 td-none">
+                            <a href="#" class="footer-list-link fz-16 td-none">
                                 Russia, Moscow. Music Box studio
                             </a>
                         </li>
                         <li class="footer-list-item">
-                            <a href="#" class="footer-list-link fs-16 td-none">
+                            <a href="#" class="footer-list-link fz-16 td-none">
                                 Мобильное приложение
                             </a>
                         </li>
                         <li class="footer-list-item">
-                            <a href="#" class="footer-list-link fs-16 td-none">
+                            <a href="#" class="footer-list-link fz-16 td-none">
                                 + 7 499 999 99 99
                             </a>
                         </li>
@@ -305,19 +329,19 @@
                 </div>
 
                 <div class="footer-info-item ai-center">
-                    <h2 class="footer-info-title fs-18 fw-bold">
+                    <h2 class="footer-info-title fz-18 fw-bold">
                         Подписывайтесь
                     </h2>
-                        <a href="#" class="footer-list-social fs-16 td-none">
+                        <a href="#" class="footer-list-social fz-16 td-none">
                             <img src="images/Google+.png" alt="google">
                         </a>
-                        <a href="#" class="footer-list-social fs-16 td-none">
+                        <a href="#" class="footer-list-social fz-16 td-none">
                             <img src="images/Facebook.png" alt="facebook">
                         </a>
-                        <a href="#" class="footer-list-social fs-16 td-none">
+                        <a href="#" class="footer-list-social fz-16 td-none">
                             <img src="images/Twitter.png" alt="twitter">
                         </a>
-                        <a href="#" class="footer-list-social fs-16 td-none">
+                        <a href="#" class="footer-list-social fz-16 td-none">
                             <img src="images/Instagram.png" alt="instagram">
                         </a>
                 </div>
@@ -326,13 +350,13 @@
         </div> <!-- /.footer-info -->
 
         <div class="footer-links">
-            <div class="footer-links-inner container flex">
+            <div class="footer-links-inner container d-flex w-100">
                 <div class="footer-links-item ai-center">
-                    <a class="footer-list-link fs-16 td-none" href="#">Магазин</a>
-                    <a class="footer-list-link fs-16 td-none" href="#">Обслуживание</a>
-                    <a class="footer-list-link fs-16 td-none" href="#">Блог</a>
-                    <a class="footer-list-link fs-16 td-none" href="#">Поддержка</a>
-                    <a class="footer-list-link fs-16 td-none" href="#">Контакты</a>
+                    <a class="footer-list-link fz-16 td-none" href="#">Магазин</a>
+                    <a class="footer-list-link fz-16 td-none" href="#">Обслуживание</a>
+                    <a class="footer-list-link fz-16 td-none" href="#">Блог</a>
+                    <a class="footer-list-link fz-16 td-none" href="#">Поддержка</a>
+                    <a class="footer-list-link fz-16 td-none" href="#">Контакты</a>
                 </div>
             </div> <!-- /.container -->
         </div> <!-- /.footer-links -->

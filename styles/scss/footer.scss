@@ -8,17 +8,11 @@
     color: #CACACA;
 }
 
-.footer-inner {
-    flex-direction: column;
-}
-
 .footer-info {
-    width: 100%;
     border-bottom: 1px solid #EEEEEE;
 }
 
 .footer-info-inner {
-    width: 100%;
     justify-content: space-between;
     padding: 8rem 0 10rem;
 }
@@ -56,7 +50,6 @@
 }
 
 .footer-links-inner {
-    width: 100%;
     justify-content: space-between;
     padding: 5rem 0;
 

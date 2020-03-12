@@ -5,7 +5,6 @@
 
 .intro {
     background-size: cover;
-    align-items: center;
 
     &.index {
         height: 100vh;
@@ -20,8 +19,6 @@
 
 .intro-inner {
     &.index {
-        flex-direction: column;
-        align-items: center;
         justify-content: center;
         text-align: center;
     }
@@ -34,38 +31,28 @@
 
 
 /*=====  Index intro =====*/
-
-.intro-info {
-    width: 100%;
-}
-
 .intro-title {
-    width: 100%;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     line-height: 1.1;
 }
 
 .intro-subtitle {
-    width: 100%;
     margin-bottom: 4.5rem;
     line-height: 1.1;
 }
 
 .intro-text {
-    width: 100%;
     margin-bottom: 4rem;
     line-height: 1.1;
 }
 
-
 .intro-form {
     width: 57rem;
-    flex-direction: column;
 }
 
 .form-item {
     justify-content: space-between;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 
     input {
         box-sizing: border-box;

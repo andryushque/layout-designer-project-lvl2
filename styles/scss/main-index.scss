@@ -10,37 +10,23 @@
 }
 
 .main-inner.index {
-    flex-direction: column;
+    .main-item {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 
 /*=====  Subscriptions  =====*/
-
-.main-subscribe {
-    margin-bottom: 10rem;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    .item-title {
-        width: 100%;
-        margin-bottom: 8rem;
-    }
-
-    .item-info {
-        width: 100%;
-    }
-}
-
 .subscriptions {
-    width: 100%;
-    flex-wrap: nowrap;
     justify-content: space-between;
-    margin-bottom: 3.8rem;
+    margin-bottom: 5rem;
 }
 
 .subscription {
     width: 35rem;
     height: 58rem;
+    justify-content: space-between;
 
     background-size: cover;
     border-radius: 1rem;
@@ -48,23 +34,22 @@
     &:hover {
         box-shadow: 0 0 2px $darkgrey;
     }
+
+    &.free {
+        background: url(../images/subscribe_1.png) center 100% no-repeat;
+    }
+
+    &.standart {
+        background: url(../images/subscribe_2.png) center 100% no-repeat;
+    }
+
+    &.premium {
+        background: url(../images/subscribe_3.png) center 100% no-repeat;
+    }
 }
 
-.subscription.free {
-    background: url(../images/subscribe_1.png) center 100% no-repeat;
-}
-
-.subscription.standart {
-    background: url(../images/subscribe_2.png) center 100% no-repeat;
-}
-
-.subscription.premium {
-    background: url(../images/subscribe_3.png) center 100% no-repeat;
-}
-
-.subscription-type {
-    margin-top: 2.5rem;
-    margin-bottom: 22.5rem;
+.subscription-bottom {
+    justify-content: space-between;
 }
 
 .subscription-price {
@@ -73,7 +58,6 @@
 
     span {
         line-height: 1;
-
         &:last-child {
             margin-left: 1rem;
             line-height: 1.5;
@@ -82,25 +66,29 @@
 }
 
 .subscription-button {
-    box-sizing: border-box;
-    width: 30rem;
-    height: 7rem;
-    margin-bottom: 5rem;
+    justify-content: center;
 
-    border: 4px solid $white;
-    border-radius: .4rem;
-    background-color: transparent;
-    color: $white;
+    button {
+        box-sizing: border-box;
+        width: 30rem;
+        height: 7rem;
 
-    &:focus, &:hover {
-        cursor: pointer;
-        box-shadow: 0 0 2px $white;
+        border: 4px solid $white;
+        border-radius: .4rem;
+        background-color: transparent;
+        color: $white;
+
+        &:focus, &:hover {
+            cursor: pointer;
+            box-shadow: 0 0 2px $white;
+        }
     }
 }
 
 .subscription-info {
-    margin: 0 2rem;
-    letter-spacing: -.5px;
+    p {
+        margin: 0 2rem;
+    }
 }
 
 .item-info {
@@ -109,34 +97,22 @@
 
 
 /*=====  News  =====*/
-
-.main-news {
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 10rem;
-
-    .item-title {
-        width: 100%;
-        margin-bottom: 6.3rem;
-    }
-}
-
 .news {
-    width: 100%;
-    flex-direction: column;
     justify-content: center;
 }
 
 .news-item {
-    width: 100%;
     justify-content: flex-start;
-    margin-bottom: 3rem;
+    margin-bottom: 7rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .news-item:nth-child(odd) {
     .news-block:nth-child(even) {
         .news-inner {
-            width: 45rem;
             margin-left: 10rem;
         }
     }
@@ -144,35 +120,27 @@
 .news-item:nth-child(even) {
     .news-block:nth-child(odd) {
         .news-inner {
-            width: 45rem;
+            margin-right: 10rem;
         }
     }
 }
 
 .news-content {
-    width: 50%;
     max-width: 60rem;
     text-align: left;
 }
 
 .news-image {
-    width: 50%;
     max-width: 57rem;
 }
 
-.album-title {
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
-}
-
 .album-info {
-    margin-bottom: 2rem;
+    margin-bottom: 1.6rem;
     line-height: 2;
     color: #8C8C8C;
 }
 
 .album-release {
-    align-items: center;
     margin-bottom: 4.5rem;
 
     img {
@@ -183,8 +151,8 @@
 
     span:first-of-type {
         color: $yellow;
-        padding-right: 2.2rem;
-        margin-right: 2.5rem;
+        padding-right: 2rem;
+        margin-right: 2rem;
         border-right: 1px solid $white;
     }
 
@@ -197,7 +165,6 @@
     box-sizing: border-box;
     width: 13rem;
     height: 4rem;
-    margin-bottom: 2rem;
 
     border: 1px solid $white;
     background-color: transparent;
@@ -211,20 +178,7 @@
 
 
 /*=====  Application  =====*/
-
-.main-application {
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 10rem;
-
-    .item-title {
-        width: 100%;
-        margin-bottom: 10rem;
-    }
-}
-
 .application {
-    width: 100%;
     justify-content: space-between;
 }
 
@@ -233,10 +187,6 @@
     text-align: left;
     line-height: 1.5;
     color: #999999;
-
-    p {
-        margin-bottom: 3rem;
-    }
 }
 
 .application-image {
