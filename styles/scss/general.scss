@@ -28,6 +28,7 @@ p {
 .container {
     max-width: 120rem;
     margin: 0 auto;
+    justify-content: center;
 }
 
 .d-flex {
@@ -40,6 +41,10 @@ p {
 
 .ai-center {
     align-items: center;
+}
+
+.w-25 {
+    width: 25%;
 }
 
 .w-50 {

@@ -13,8 +13,15 @@
 }
 
 .footer-info-inner {
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 8rem 0 10rem;
+}
+
+.footer-info-item {
+    margin-right: 10rem;
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
 .footer-info-title {
@@ -50,7 +57,7 @@
 }
 
 .footer-links-inner {
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 5rem 0;
 
     .footer-list-link {

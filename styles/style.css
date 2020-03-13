@@ -22,7 +22,8 @@ p {
 
 .container {
   max-width: 120rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  justify-content: center; }
 
 .d-flex {
   display: flex; }
@@ -32,6 +33,9 @@ p {
 
 .ai-center {
   align-items: center; }
+
+.w-25 {
+  width: 25%; }
 
 .w-50 {
   width: 50%; }
@@ -116,7 +120,7 @@ p {
   top: 0;
   left: 0;
   height: 5rem;
-  margin-top: 2rem; }
+  margin-top: 3rem; }
 
 .header-inner {
   justify-content: space-between;
@@ -124,10 +128,7 @@ p {
   padding: 0; }
 
 .header-left {
-  justify-content: space-between; }
-
-.header-nav {
-  margin-right: 7.5rem; }
+  justify-content: flex-start; }
 
 .header-logo-image img {
   height: 2rem;
@@ -152,22 +153,24 @@ p {
 
 .header-search {
   background: #3C3B3D;
-  border-radius: 3.1rem; }
+  border-radius: 3rem; }
   .header-search form {
-    width: auto;
+    width: 28rem;
     position: relative; }
     .header-search form input {
       box-sizing: border-box;
-      width: 28.1rem;
-      height: 3.1rem;
-      margin-left: 1.3rem;
-      border-radius: 3.1rem;
+      width: 28rem;
+      height: 3rem;
+      border-radius: 3rem;
       background: #3C3B3D;
       border: none;
       outline: none; }
+      .header-search form input::placeholder {
+        padding-left: 1.3rem; }
       .header-search form input:focus {
+        padding-left: 1.3rem;
         color: gray;
-        font-size: 1.6rem; }
+        font-size: 1.4rem; }
         .header-search form input:focus::placeholder {
           color: transparent; }
   .header-search button {
@@ -181,7 +184,7 @@ p {
 .intro {
   background-size: cover; }
   .intro.index {
-    height: 100vh;
+    height: 86.5rem;
     background: url(../images/banner.png) center 75% no-repeat; }
   .intro.catalog {
     height: 54rem;
@@ -362,6 +365,8 @@ p {
 
 .news-image {
   max-width: 57rem; }
+  .news-image img {
+    width: 100%; }
 
 .album-info {
   margin-bottom: 1.6rem;
@@ -512,8 +517,13 @@ p {
   border-bottom: 1px solid #EEEEEE; }
 
 .footer-info-inner {
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 8rem 0 10rem; }
+
+.footer-info-item {
+  margin-right: 10rem; }
+  .footer-info-item:last-child {
+    margin-right: 0; }
 
 .footer-info-title {
   margin-bottom: 3rem; }
@@ -540,7 +550,7 @@ p {
     margin-right: 0; }
 
 .footer-links-inner {
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 5rem 0; }
   .footer-links-inner .footer-list-link {
     margin: 0;
@@ -557,17 +567,17 @@ p {
   .header-nav {
     margin-right: 0; }
 
-  /*=====  Subscriptions  =====*/
+  /*=====  Index - Subscriptions  =====*/
   .subscriptions {
     width: 95%; }
 
   .subscription {
     width: 30%; }
 
-  .subscription-button {
-    width: 80%; }
+  .subscription-button button {
+    width: 75%; }
 
-  /*=====  News  =====*/
+  /*=====  Index - News  =====*/
   .news {
     width: 95%; }
 
@@ -575,19 +585,12 @@ p {
     justify-content: space-around; }
 
   .news-item:nth-child(odd) .news-block:nth-child(even) .news-inner {
-    width: 95%;
-    margin-left: 5rem; }
+    margin-left: 7.5rem; }
 
   .news-item:nth-child(even) .news-block:nth-child(odd) .news-inner {
-    width: 95%; }
+    margin-right: 7.5rem; }
 
-  .news-block {
-    width: 50%; }
-
-  .news-image img {
-    width: 100%; }
-
-  /*=====  Application  =====*/
+  /*=====  Index - Application  =====*/
   .application {
     width: 95%; }
 
@@ -596,59 +599,76 @@ p {
     justify-content: center; }
 
   .footer-info-inner {
-    width: 90%;
-    padding: 4rem 2rem; }
+    width: 87.5%;
+    padding: 10rem 2rem; }
 
   .footer-links-inner {
-    width: 90%;
-    padding: 4rem 2rem; } }
+    width: 87.5%;
+    padding: 5rem 2rem; } }
 @media (max-width: 1024px) {
   /*=====  Header  =====*/
-  .header-left {
-    width: 60%; }
-
   .header-right {
     width: 40%; }
 
   .header-link {
-    margin-left: 2rem; }
+    margin-left: 1.5rem; }
 
   .header-search form input {
     width: 22rem; }
 
-  /*=====  Subscriptions  =====*/
-  .main {
-    padding-top: 5rem; }
+  /*=====  Intro  =====*/
+  .intro-inner {
+    width: 90%;
+    margin: 0 auto; }
 
-  .main-subscribe .item-title {
-    margin-bottom: 5rem; }
+  .intro-title {
+    font-size: 5rem; }
+
+  .intro-subtitle {
+    font-size: 2.5rem; }
+
+  /*=====  Index - Subscriptions  =====*/
+  .main.index {
+    padding-top: 7.5rem; }
 
   .subscription {
-    height: 45rem; }
+    height: 46.5rem; }
 
   .subscription-type {
-    margin-top: 2rem;
-    margin-bottom: 10rem; }
+    margin-top: 2rem; }
 
   .subscription-button {
     font-size: 2rem; }
 
-  /*=====  News  =====*/
-  .main-news .item-title {
+  .item-info {
+    font-size: 2rem; }
+
+  /*=====  Index - News  =====*/
+  .news-item {
     margin-bottom: 5rem; }
+
+  .news-item:nth-child(odd) .news-block:nth-child(even) .news-inner {
+    margin-left: 5rem; }
+
+  .news-item:nth-child(even) .news-block:nth-child(odd) .news-inner {
+    margin-right: 5rem; }
+
+  .album-title {
+    margin-bottom: 1.5rem;
+    font-size: 3rem; }
+
+  .album-info {
+    font-size: 1.4rem;
+    line-height: 1.1; }
 
   .album-release {
-    margin-bottom: 2rem; }
+    margin-bottom: 1.5rem; }
 
-  /*=====  Application  =====*/
-  .main-application .item-title {
-    margin-bottom: 5rem; }
-
+  /*=====  Index - Application  =====*/
   .application-info {
-    width: 50%; }
+    font-size: 1.5rem; }
 
   .application-image {
-    width: 50%;
     justify-content: flex-end; }
 
   /*=====  Footer  =====*/
@@ -657,7 +677,8 @@ p {
     justify-content: center; }
 
   .footer-info-item {
-    width: 33%; }
+    width: 30%;
+    margin-right: 0; }
     .footer-info-item:last-child {
       width: 100%;
       margin-top: 4rem;
@@ -666,40 +687,48 @@ p {
   .footer-list-item {
     margin-bottom: 1.5rem; }
     .footer-list-item:last-child {
-      margin-bottom: 0; } }
+      margin-bottom: 0; }
+
+  .footer-links-inner {
+    justify-content: center; } }
 @media (max-width: 768px) {
   /*=====  Header  =====*/
   .header-inner {
     flex-wrap: wrap; }
 
   .header-left {
-    width: 100%;
-    margin-bottom: 2rem; }
+    width: 50%;
+    margin-bottom: 1rem; }
+
+  .header-middle {
+    width: 50%;
+    justify-content: flex-end;
+    margin-bottom: 1rem; }
 
   .header-right {
     width: 100%; }
 
   .header-search form input {
-    width: 28.1rem; }
+    width: 28rem; }
 
   /*=====  Intro  =====*/
+  .intro.index {
+    align-items: flex-end;
+    height: 73.8rem; }
+
   .intro-title {
-    width: 80vw;
     font-size: 4.5rem; }
 
   .intro-subtitle {
-    width: 80vw;
+    margin-bottom: 4.5rem;
     font-size: 2.2rem; }
 
-  .intro-inner {
-    width: 80vw; }
-
   .intro-text {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     font-size: 1.6rem; }
 
   .intro-form {
-    width: 100vw;
+    width: 100%;
     justify-content: center; }
 
   .form-item {
@@ -708,37 +737,61 @@ p {
     justify-content: center;
     margin: 0; }
     .form-item input {
-      width: 80vw;
-      margin-bottom: 1rem; }
+      width: 87.5%;
+      margin-bottom: 3rem; }
 
   .intro-button {
-    width: 80vw;
-    margin-bottom: 1rem; }
-
-  /*=====  Subscriptions  =====*/
-  .main-subscribe .item-title {
-    margin-bottom: 3rem; }
-
-  .main-item {
+    width: 87.5%;
     margin-bottom: 5rem; }
 
+  /*=====  Index - Subscriptions  =====*/
+  .main-subscribe .item-title {
+    width: 87.5%;
+    margin-bottom: 5rem;
+    font-size: 3rem; }
+
   .subscriptions {
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    width: 50%; }
+    width: 28rem; }
 
   .subscription {
-    width: 100%;
-    max-width: 35rem;
-    height: 45rem;
-    margin-bottom: 2rem; }
+    width: 28rem;
+    height: 46rem;
+    margin-bottom: 5rem; }
     .subscription:last-child {
       margin-bottom: 0; }
+
+  .subscription-bottom {
+    margin-bottom: 1.5rem; }
+
+  .subscription-button {
+    margin-bottom: 4rem; }
+
+  .album-title {
+    margin-bottom: 2.5rem; }
+
+  .album-info {
+    margin-bottom: 2.5rem; }
+
+  .album-release {
+    margin-bottom: 2.5rem; }
 
   .album-release {
     justify-content: center; }
 
-  /*=====  News  =====*/
+  .item-info {
+    font-size: 1.8rem; }
+
+  /*=====  Index - News  =====*/
+  .main-news .item-title {
+    width: 87.5%;
+    margin-bottom: 5rem;
+    font-size: 3rem; }
+
+  .news {
+    width: 87.5%; }
+
   .news-item {
     flex-wrap: wrap;
     justify-content: center; }
@@ -750,43 +803,58 @@ p {
   .news-item:nth-child(even) .news-block:nth-child(odd) {
     order: 2; }
     .news-item:nth-child(even) .news-block:nth-child(odd) .news-inner {
-      width: 100%; }
+      width: 100%;
+      margin-right: 0; }
+
+  .news-image {
+    margin-bottom: 2rem; }
 
   .news-block {
     width: 100%;
     text-align: center; }
 
   .album-info {
-    margin-bottom: 1rem;
-    line-height: 1.1; }
+    margin-bottom: 2.5rem;
+    line-height: 2.2; }
 
-  /*=====  Application  =====*/
-  .main-application {
-    margin-bottom: 5rem; }
+  .album-release span:first-of-type {
+    padding-right: 4rem;
+    margin-right: 4rem; }
+
+  .news-button {
+    width: 28rem; }
+
+  /*=====  Index - Application  =====*/
+  .main-application .item-title {
+    width: 87.5%;
+    margin-bottom: 5rem;
+    font-size: 3rem; }
 
   .application {
+    width: 87.5%;
     flex-wrap: wrap;
     justify-content: center; }
 
   .application-info {
-    width: 100%;
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
     text-align: center; }
     .application-info p:first-child {
-      margin-bottom: 1.5rem; }
+      margin-bottom: 2.5rem; }
 
   .application-image {
     width: 100%;
     justify-content: center; }
+    .application-image img {
+      width: 28rem; }
 
   .application-button {
     width: 100%;
     justify-content: center; }
+    .application-button button {
+      width: 28rem; }
 
   /*=====  Footer  =====*/
   .footer-info-inner {
-    width: 80%;
-    padding: 3rem 1.5rem;
     justify-content: space-between; }
 
   .footer-info-item {
@@ -798,45 +866,26 @@ p {
     .footer-info-item:nth-child(1), .footer-info-item:nth-child(2) {
       margin-bottom: 4rem; }
 
-  .footer-info-title {
-    margin-bottom: 1.5rem; }
-
   .footer-list-item {
-    margin-bottom: 1rem; }
+    margin-bottom: 2rem; }
     .footer-list-item:last-child {
-      margin-bottom: 1rem; }
-
-  .footer-links-inner {
-    padding: 2rem 0;
-    justify-content: center;
-    text-align: center;
-    flex-wrap: wrap; }
-    .footer-links-inner .footer-links-item {
-      width: 100%; }
-      .footer-links-inner .footer-links-item:first-child {
-        margin-bottom: 1.5rem; }
-    .footer-links-inner .footer-list-link {
-      margin-right: 2rem; } }
+      margin-bottom: 0; } }
 @media (max-width: 565px) {
   /*=====  Header  =====*/
-  .header {
-    background: rgba(8, 2, 13, 0.7);
-    height: auto;
-    margin-top: 0; }
-
   .header-left {
     width: 100%;
-    flex-wrap: wrap;
-    margin-bottom: 0; }
+    justify-content: flex-start;
+    margin-bottom: 2rem; }
+
+  .header-middle {
+    order: 2;
+    width: 100%;
+    justify-content: flex-start; }
 
   .header-right {
     width: 100%;
     justify-content: flex-start;
-    margin-bottom: 1rem; }
-
-  .header-logo {
-    width: 100%;
-    margin: 1rem 0; }
+    margin-bottom: 2rem; }
 
   .header-nav {
     width: 100%;
@@ -846,33 +895,56 @@ p {
     width: 100%;
     margin: 0 0 1rem; }
 
-  .header-search form input {
-    width: 100%; }
-
   /*=====  Intro  =====*/
   .intro-title {
-    padding-top: 15rem;
     font-size: 3.6rem; }
 
   .intro-subtitle {
     font-size: 1.8rem; }
 
-  /*=====  Subscriptions  =====*/
-  .subscriptions {
-    width: 100%; }
+  /*=====  Index - Subscriptions  =====*/
+  .main-subscribe .item-title {
+    font-size: 2rem; }
 
-  /*=====  News  =====*/
+  /*=====  Index - News  =====*/
   .main-news .item-title {
-    width: 90%; }
+    font-size: 2rem; }
+
+  .album-title {
+    text-align: left; }
+
+  .album-info {
+    text-align: left; }
+
+  /*=====  Index - Application  =====*/
+  .main-application .item-title {
+    font-size: 2rem; }
 
   /*=====  Footer  =====*/
+  .footer-inner {
+    justify-content: center; }
+
   .footer-info-item {
     width: 100%;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     text-align: center; }
     .footer-info-item:last-child {
+      margin-bottom: 0;
       text-align: center;
-      width: 100%; } }
+      width: 100%; }
+
+  .footer-links-item {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center; }
+    .footer-links-item .footer-list-link {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 2rem;
+      text-align: center; }
+      .footer-links-item .footer-list-link:last-child {
+        margin-bottom: 0; } }
 @media (max-width: 425px) {
   /*=====  Intro  =====*/
   .intro-title {
@@ -887,13 +959,14 @@ p {
     font-size: 1.4rem;
     line-height: 1; }
 
-  /*=====  Subscriptions  =====*/
-  .subscriptions {
-    width: 100%; }
-
   /*=====  Footer  =====*/
-  .footer-links-inner .footer-list-link {
-    margin-right: .5rem; } }
+  .footer-info-item {
+    text-align: left; }
+    .footer-info-item:last-child {
+      text-align: left; }
+
+  .footer-links-item .footer-list-link {
+    text-align: left; } }
 @media (max-width: 375px) {
   /*=====  Intro  =====*/
   .intro-title {
@@ -902,8 +975,8 @@ p {
   .intro-subtitle {
     font-size: 1.4rem; }
 
-  /*=====  Subscriptions  =====*/
+  /*=====  Index - Subscriptions  =====*/
   .subscription {
-    max-width: 30rem; } }
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

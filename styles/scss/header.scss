@@ -8,7 +8,7 @@
     top: 0;
     left: 0;
     height: 5rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 .header-inner {
@@ -18,11 +18,7 @@
 }
 
 .header-left {
-    justify-content: space-between;
-}
-
-.header-nav {
-    margin-right: 7.5rem;
+    justify-content: flex-start;
 }
 
 .header-logo-image img {
@@ -58,25 +54,29 @@
 
 .header-search {
     background: $darkgrey;
-    border-radius: 3.1rem;
+    border-radius: 3rem;
 
     form {
-        width: auto;
+        width: 28rem;
         position: relative;
 
         input {
             box-sizing: border-box;
-            width: 28.1rem;
-            height: 3.1rem;
-            margin-left: 1.3rem;
-            border-radius: 3.1rem;
+            width: 28rem;
+            height: 3rem;
+            border-radius: 3rem;
             background: $darkgrey;
             border: none;
             outline: none;
 
+            &::placeholder {
+                padding-left: 1.3rem;
+            }
+
             &:focus {
+                padding-left: 1.3rem;
                 color: rgba($grey, 1);
-                font-size: 1.6rem;
+                font-size: 1.4rem;
 
                 &::placeholder {
                     color: transparent;
