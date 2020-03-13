@@ -1,7 +1,5 @@
 @import "variables";
 
-/* 1280px 1024px 768px (565px) 425p 375px 320px */
-
 @media (max-width : 1280px) {
     /*=====  Header  =====*/
     .header-inner {
@@ -11,7 +9,8 @@
         margin-right: 0;
     }
 
-    /*=====  Index - Subscriptions  =====*/
+
+    /*=====  Index / Subscriptions  =====*/
     .subscriptions {
         width: 95%;
     }
@@ -22,7 +21,7 @@
         width: 75%;
     }
 
-    /*=====  Index - News  =====*/
+    /*=====  Index / News  =====*/
     .news {
         width: 95%;
     }
@@ -44,10 +43,78 @@
         }
     }
 
-    /*=====  Index - Application  =====*/
+    /*=====  Index / Application  =====*/
     .application {
         width: 95%;
     }
+
+
+    /*=====  Catalog =====*/
+    .main-inner.catalog {
+        .main-item {
+            .main-block {
+                width: 95%;
+            }
+            .item-title {
+                width: 95%;
+            }
+        }
+    }
+
+    /*=====  Catalog / Intro =====*/
+    .intro-artist {
+        justify-content: center;
+        .artist-name {
+            width: 95%;
+        }
+        .artist-fans {
+            width: 95%;
+        }
+        .intro-buttons {
+            width: 95%;
+        }
+    }
+
+    /*=====  Catalog / Discography =====*/
+    .discography-album {
+        width: 25%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-right: 0;
+        &:nth-child(4n) {
+            margin-right: 0;
+        }
+    }
+    .album-data {
+        width: 95%;
+    }
+    .album-cover {
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    /*=====  Catalog / Similar =====*/
+    .similar-artist {
+        width: 25%;
+        justify-content: flex-start;
+        margin-right: 0;
+        &:nth-child(4n) {
+            margin-right: 0;
+        }
+    }
+    .artist-data {
+        width: 95%;
+    }
+    .artist-photo {
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
 
     /*=====  Footer  =====*/
     .footer-info {
@@ -75,7 +142,7 @@
         width: 22rem;
     }
 
-    /*=====  Intro  =====*/
+    /*=====  Index / Intro  =====*/
     .intro-inner {
         width: 90%;
         margin: 0 auto;
@@ -87,7 +154,7 @@
         font-size: 2.5rem;
     }
 
-    /*=====  Index - Subscriptions  =====*/
+    /*=====  Index / Subscriptions  =====*/
     .main.index {
         padding-top: 7.5rem;
     }
@@ -104,7 +171,7 @@
         font-size: 2rem;
     }
 
-    /*=====  Index - News  =====*/
+    /*=====  Index / News  =====*/
     .news-item {
         margin-bottom: 5rem;
     }
@@ -135,13 +202,30 @@
         margin-bottom: 1.5rem;
     }
 
-    /*=====  Index - Application  =====*/
+    /*=====  Index / Application  =====*/
     .application-info {
         font-size: 1.5rem;
     }
     .application-image {
         justify-content: flex-end;
     }
+
+
+    /*=====  Catalog / Popular =====*/
+    .track-length {
+        margin-right: 7.5rem;
+    }
+
+    /*=====  Catalog / Discography =====*/
+    .discography-album {
+        width: 33.33333%;
+    }
+
+    /*=====  Catalog / Similar =====*/
+    .similar-artist {
+        width: 33.33333%;
+    }
+
 
     /*=====  Footer  =====*/
     .footer-info-inner {
@@ -189,7 +273,8 @@
         width: 28rem;
     }
 
-    /*=====  Intro  =====*/
+
+    /*=====  Index / Intro  =====*/
     .intro.index {
         align-items: flex-end;
         height: 73.8rem;
@@ -225,7 +310,7 @@
         margin-bottom: 5rem;
     }
 
-    /*=====  Index - Subscriptions  =====*/
+    /*=====  Index / Subscriptions  =====*/
     .main-subscribe {
         .item-title {
             width: 87.5%;
@@ -268,7 +353,7 @@
         font-size: 1.8rem;
     }
 
-    /*=====  Index - News  =====*/
+    /*=====  Index / News  =====*/
     .main-news {
         .item-title {
             width: 87.5%;
@@ -322,7 +407,7 @@
         width: 28rem;
     }
 
-    /*=====  Index - Application  =====*/
+    /*=====  Index / Application  =====*/
     .main-application {
         .item-title {
             width: 87.5%;
@@ -358,6 +443,98 @@
             width: 28rem;
         }
     }
+
+
+    /*=====  Catalog =====*/
+    .main-inner.catalog {
+        .main-item {
+            .main-block {
+                width: 87.5%;
+            }
+            .item-title {
+                width: 87.5%;
+                font-size: 3.4rem;
+            }
+        }
+    }
+
+    /*=====  Catalog / Intro =====*/
+    .intro {
+        &.catalog {
+            justify-content: flex-end;
+            height: 63rem;
+            background-position: 75%;
+            background-size: auto 100%;
+        }
+    }
+    .intro-artist {
+        justify-content: center;
+        margin-top: 0;
+        .artist-name {
+            width: 87.5%;
+            margin-bottom: 2.5rem;
+            font-size: 4.8rem;
+        }
+        .artist-fans {
+            width: 87.5%;
+            font-size: 1.6rem;
+            margin-bottom: 4rem;
+        }
+        .intro-buttons {
+            width: 87.5%;
+            margin-bottom: 10rem;
+        }
+    }
+
+    /*=====  Catalog / Popular =====*/
+    .popular {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .popular-track {
+        width: 100%;
+        margin-bottom: 2.5rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .track-length {
+        margin-right: 0;
+    }
+
+    /*=====  Catalog / Discography =====*/
+    .discography-album {
+        width: 50%;
+        &:nth-child(2n) {
+            justify-content: flex-end;
+        }
+    }
+    .album-name {
+        font-size: 1.8rem;
+    }
+    .album-year {
+        font-size: 1.5rem;
+    }
+
+    /*=====  Catalog / Similar =====*/
+    .similar-artist {
+        width: 50%;
+        margin-bottom: 5rem;
+        &:nth-child(2n) {
+            justify-content: flex-end;
+        }
+        &:nth-last-child(-n+2) {
+            margin-bottom: 0;
+        }
+    }
+    .artist-name {
+        font-size: 1.8rem;
+    }
+    .artist-fans {
+        font-size: 1.4rem;
+    }
+
 
     /*=====  Footer  =====*/
     .footer-info-inner {
@@ -408,7 +585,8 @@
         margin: 0 0 1rem;
     }
 
-    /*=====  Intro  =====*/
+
+    /*=====  Index / Intro  =====*/
     .intro-title {
         font-size: 3.6rem;
     }
@@ -416,14 +594,14 @@
         font-size: 1.8rem;
     }
 
-    /*=====  Index - Subscriptions  =====*/
+    /*=====  Index / Subscriptions  =====*/
     .main-subscribe {
         .item-title {
             font-size: 2rem;
         }
     }
 
-    /*=====  Index - News  =====*/
+    /*=====  Index / News  =====*/
     .main-news {
         .item-title {
             font-size: 2rem;
@@ -436,12 +614,61 @@
         text-align: left;
     }
 
-    /*=====  Index - Application  =====*/
+    /*=====  Index / Application  =====*/
     .main-application {
         .item-title {
             font-size: 2rem;
         }
     }
+
+
+    /*=====  Catalog =====*/
+    .main-inner.catalog {
+        .main-item {
+            .item-title {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    /*=====  Catalog / Intro =====*/
+    .intro-artist {
+        .artist-name {
+            font-size: 3rem;
+        }
+        .artist-fans {
+            font-size: 1.4rem;
+        }
+        .intro-buttons {
+            button {
+                width: 28rem;
+                margin-bottom: 2.5rem;
+                margin-right: 0;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    /*=====  Catalog / Discography =====*/
+    .album-name {
+        font-size: 1.6rem;
+        margin-bottom: .5rem;
+    }
+    .album-year {
+        font-size: 1.4rem;
+    }
+
+    /*=====  Catalog / Similar =====*/
+    .artist-name {
+        font-size: 1.6rem;
+    }
+    .artist-fans {
+        font-size: 1.2rem;
+    }
+
 
     /*=====  Footer  =====*/
     .footer-inner {
@@ -477,7 +704,7 @@
 }
 
 @media (max-width : 425px) {
-    /*=====  Intro  =====*/
+    /*=====  Index / Intro  =====*/
     .intro-title {
         font-size: 3rem;
         line-height: 1;
@@ -504,7 +731,7 @@
 }
 
 @media (max-width : 375px) {
-    /*=====  Intro  =====*/
+    /*=====  Index / Intro  =====*/
     .intro-title {
         font-size: 2.8rem;
     }
@@ -512,7 +739,7 @@
         font-size: 1.4rem;
     }
 
-    /*=====  Index - Subscriptions  =====*/
+    /*=====  Index / Subscriptions  =====*/
     .subscription {
         width: 100%;
     }
