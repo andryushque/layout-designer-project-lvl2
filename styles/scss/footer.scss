@@ -49,11 +49,10 @@
     }
 }
 
-.footer-list-social {
-    margin-right: 2.8rem;
-    &:last-child {
-        margin-right: 0;
-    }
+.footer-social {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    vertical-align: middle;
 }
 
 .footer-links-inner {
