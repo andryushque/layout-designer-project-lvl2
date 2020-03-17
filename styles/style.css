@@ -22,8 +22,8 @@ p {
 
 .container {
   max-width: 120rem;
-  margin: 0 auto;
-  justify-content: center; }
+  width: 100%;
+  margin: 0 auto; }
 
 .d-flex {
   display: flex; }
@@ -120,7 +120,6 @@ p {
   position: absolute;
   top: 0;
   left: 0;
-  height: 5rem;
   margin-top: 3rem; }
 
 .header-inner {
@@ -182,14 +181,16 @@ p {
     right: .7rem; }
 
 /*=====  Intro  =====*/
-.intro {
+.intro.index {
+  padding-top: 27.2rem;
+  padding-bottom: 25.4rem;
+  background: url(../images/banner.png) center 75% no-repeat;
   background-size: cover; }
-  .intro.index {
-    height: 86.5rem;
-    background: url(../images/banner.png) center 75% no-repeat; }
-  .intro.catalog {
-    height: 54rem;
-    background: url(../images/Morten%20Harket.png) center 75% no-repeat; }
+.intro.catalog {
+  padding-top: 28rem;
+  padding-bottom: 8.2rem;
+  background: url(../images/Morten%20Harket.png) center 75% no-repeat;
+  background-size: cover; }
 
 .intro-inner.index {
   justify-content: center;
@@ -201,18 +202,15 @@ p {
 /*=====  Index / Intro =====*/
 .intro-title {
   margin-bottom: 1rem;
-  line-height: 1.1; }
+  line-height: 7rem; }
 
 .intro-subtitle {
   margin-bottom: 4.5rem;
-  line-height: 1.1; }
+  line-height: 3.5rem; }
 
 .intro-text {
   margin-bottom: 4rem;
-  line-height: 1.1; }
-
-.intro-form {
-  width: 57rem; }
+  line-height: 2.1rem; }
 
 .form-item {
   justify-content: space-between;
@@ -227,6 +225,8 @@ p {
     outline: none;
     background: rgba(255, 255, 255, 0.2);
     color: white; }
+    .form-item input:first-child {
+      margin-right: 3rem; }
     .form-item input::placeholder {
       color: white; }
     .form-item input:focus {
@@ -235,7 +235,7 @@ p {
         color: transparent; }
 
 .intro-button {
-  width: 57rem;
+  width: 100%;
   height: 5rem;
   border: 1px solid #34C176;
   background-color: #34C176;
@@ -247,14 +247,15 @@ p {
 /*=====  Catalog / Intro =====*/
 .intro-artist {
   flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 20rem; }
+  justify-content: center; }
 
 .artist-name {
-  margin-bottom: 2rem; }
+  margin-bottom: 2.5rem;
+  line-height: 1; }
 
 .artist-fans {
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem;
+  line-height: 1; }
 
 .intro-buttons button {
   position: relative;
@@ -676,10 +677,12 @@ p {
     margin: 0 auto; }
 
   .intro-title {
-    font-size: 5rem; }
+    font-size: 5rem;
+    line-height: 1.1; }
 
   .intro-subtitle {
-    font-size: 2.5rem; }
+    font-size: 2.5rem;
+    line-height: 1.1; }
 
   /*=====  Index / Subscriptions  =====*/
   .main.index {
@@ -784,10 +787,15 @@ p {
   .header-search form input {
     width: 28rem; }
 
+  /*=====  Index =====*/
+  .main-inner.index .main-item .item-title {
+    width: 87.5%;
+    margin-bottom: 5rem;
+    font-size: 3rem; }
+
   /*=====  Index / Intro  =====*/
   .intro.index {
-    align-items: flex-end;
-    height: 73.8rem; }
+    padding-bottom: 15rem; }
 
   .intro-title {
     font-size: 4.5rem; }
@@ -812,17 +820,13 @@ p {
     .form-item input {
       width: 87.5%;
       margin-bottom: 3rem; }
+      .form-item input:first-child {
+        margin-right: 0; }
 
   .intro-button {
-    width: 87.5%;
-    margin-bottom: 5rem; }
+    width: 87.5%; }
 
   /*=====  Index / Subscriptions  =====*/
-  .main-subscribe .item-title {
-    width: 87.5%;
-    margin-bottom: 5rem;
-    font-size: 3rem; }
-
   .subscriptions {
     flex-direction: column;
     justify-content: center;
@@ -857,11 +861,6 @@ p {
     font-size: 1.8rem; }
 
   /*=====  Index / News  =====*/
-  .main-news .item-title {
-    width: 87.5%;
-    margin-bottom: 5rem;
-    font-size: 3rem; }
-
   .news {
     width: 87.5%; }
 
@@ -898,11 +897,6 @@ p {
     width: 28rem; }
 
   /*=====  Index / Application  =====*/
-  .main-application .item-title {
-    width: 87.5%;
-    margin-bottom: 5rem;
-    font-size: 3rem; }
-
   .application {
     width: 87.5%;
     flex-wrap: wrap;
@@ -935,10 +929,10 @@ p {
 
   /*=====  Catalog / Intro =====*/
   .intro.catalog {
-    justify-content: flex-end;
-    height: 63rem;
     background-position: 75%;
-    background-size: auto 100%; }
+    background-size: auto 100%;
+    padding-top: 29.5rem;
+    padding-bottom: 10rem; }
 
   .intro-artist {
     justify-content: center;
@@ -952,8 +946,7 @@ p {
       font-size: 1.6rem;
       margin-bottom: 4rem; }
     .intro-artist .intro-buttons {
-      width: 87.5%;
-      margin-bottom: 10rem; }
+      width: 87.5%; }
 
   /*=====  Catalog / Popular =====*/
   .popular {
@@ -1041,21 +1034,22 @@ p {
     width: 100%;
     margin: 0 0 1rem; }
 
+  /*=====  Index + Catalog =====*/
+  .main-inner.index .main-item .item-title, .main-inner.catalog .main-item .item-title {
+    font-size: 2.5rem; }
+
   /*=====  Index / Intro  =====*/
+  .intro.index {
+    padding-top: 26.4rem;
+    padding-bottom: 5rem; }
+
   .intro-title {
     font-size: 3.6rem; }
 
   .intro-subtitle {
     font-size: 1.8rem; }
 
-  /*=====  Index / Subscriptions  =====*/
-  .main-subscribe .item-title {
-    font-size: 2rem; }
-
   /*=====  Index / News  =====*/
-  .main-news .item-title {
-    font-size: 2rem; }
-
   .album-cover img:last-child {
     left: .5rem;
     bottom: .5rem;
@@ -1066,14 +1060,6 @@ p {
 
   .album-info {
     text-align: left; }
-
-  /*=====  Index / Application  =====*/
-  .main-application .item-title {
-    font-size: 2rem; }
-
-  /*=====  Catalog =====*/
-  .main-inner.catalog .main-item .item-title {
-    font-size: 2rem; }
 
   /*=====  Catalog / Intro =====*/
   .intro-artist .artist-name {
@@ -1131,6 +1117,10 @@ p {
   .footer-social {
     justify-content: center; } }
 @media (max-width: 425px) {
+  /*=====  Index + Catalog =====*/
+  .main-inner.index .main-item .item-title, .main-inner.catalog .main-item .item-title {
+    font-size: 2rem; }
+
   /*=====  Index / Intro  =====*/
   .intro-title {
     font-size: 3rem;

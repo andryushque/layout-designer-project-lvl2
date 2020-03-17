@@ -149,9 +149,11 @@
     }
     .intro-title {
         font-size: 5rem;
+        line-height: 1.1;
     }
     .intro-subtitle {
         font-size: 2.5rem;
+        line-height: 1.1;
     }
 
     /*=====  Index / Subscriptions  =====*/
@@ -282,11 +284,20 @@
         width: 28rem;
     }
 
+    /*=====  Index =====*/
+    .main-inner.index {
+        .main-item {
+            .item-title {
+                width: 87.5%;
+                margin-bottom: 5rem;
+                font-size: 3rem;
+            }
+        }
+    }
 
     /*=====  Index / Intro  =====*/
     .intro.index {
-        align-items: flex-end;
-        height: 73.8rem;
+        padding-bottom: 15rem;
     }
     .intro-title {
         font-size: 4.5rem;
@@ -311,22 +322,18 @@
 
         input {
             width: 87.5%;
-            margin-bottom: 3rem
+            margin-bottom: 3rem;
+
+            &:first-child {
+                margin-right: 0;
+            }
         }
     }
     .intro-button {
         width: 87.5%;
-        margin-bottom: 5rem;
     }
 
     /*=====  Index / Subscriptions  =====*/
-    .main-subscribe {
-        .item-title {
-            width: 87.5%;
-            margin-bottom: 5rem;
-            font-size: 3rem;
-        }
-    }
     .subscriptions {
         flex-direction: column;
         justify-content: center;
@@ -363,13 +370,6 @@
     }
 
     /*=====  Index / News  =====*/
-    .main-news {
-        .item-title {
-            width: 87.5%;
-            margin-bottom: 5rem;
-            font-size: 3rem;
-        }
-    }
     .news {
         width: 87.5%;
     }
@@ -417,13 +417,6 @@
     }
 
     /*=====  Index / Application  =====*/
-    .main-application {
-        .item-title {
-            width: 87.5%;
-            margin-bottom: 5rem;
-            font-size: 3rem;
-        }
-    }
     .application {
         width: 87.5%;
         flex-wrap: wrap;
@@ -470,10 +463,10 @@
     /*=====  Catalog / Intro =====*/
     .intro {
         &.catalog {
-            justify-content: flex-end;
-            height: 63rem;
             background-position: 75%;
             background-size: auto 100%;
+            padding-top: 29.5rem;
+            padding-bottom: 10rem;
         }
     }
     .intro-artist {
@@ -491,7 +484,6 @@
         }
         .intro-buttons {
             width: 87.5%;
-            margin-bottom: 10rem;
         }
     }
 
@@ -598,7 +590,22 @@
     }
 
 
+    /*=====  Index + Catalog =====*/
+    .main-inner {
+        &.index, &.catalog {
+            .main-item {
+                .item-title {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+
     /*=====  Index / Intro  =====*/
+    .intro.index {
+        padding-top: 26.4rem;
+        padding-bottom: 5rem;
+    }
     .intro-title {
         font-size: 3.6rem;
     }
@@ -606,19 +613,7 @@
         font-size: 1.8rem;
     }
 
-    /*=====  Index / Subscriptions  =====*/
-    .main-subscribe {
-        .item-title {
-            font-size: 2rem;
-        }
-    }
-
     /*=====  Index / News  =====*/
-    .main-news {
-        .item-title {
-            font-size: 2rem;
-        }
-    }
     .album-cover {
         img:last-child {
             left: .5rem;
@@ -633,22 +628,6 @@
         text-align: left;
     }
 
-    /*=====  Index / Application  =====*/
-    .main-application {
-        .item-title {
-            font-size: 2rem;
-        }
-    }
-
-
-    /*=====  Catalog =====*/
-    .main-inner.catalog {
-        .main-item {
-            .item-title {
-                font-size: 2rem;
-            }
-        }
-    }
 
     /*=====  Catalog / Intro =====*/
     .intro-artist {
@@ -725,6 +704,17 @@
 }
 
 @media (max-width : 425px) {
+    /*=====  Index + Catalog =====*/
+    .main-inner {
+        &.index, &.catalog {
+            .main-item {
+                .item-title {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+
     /*=====  Index / Intro  =====*/
     .intro-title {
         font-size: 3rem;
