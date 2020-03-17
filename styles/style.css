@@ -1049,6 +1049,10 @@ p {
   .intro-subtitle {
     font-size: 1.8rem; }
 
+  .intro-text {
+    font-size: 1.4rem;
+    line-height: 1; }
+
   /*=====  Index / News  =====*/
   .album-cover img:last-child {
     left: .5rem;
@@ -1127,7 +1131,7 @@ p {
     line-height: 1; }
 
   .intro-text {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 1; }
 
   /*=====  Footer  =====*/
