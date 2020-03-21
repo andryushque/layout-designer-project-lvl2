@@ -193,27 +193,25 @@ p {
   background-size: cover; }
 
 .intro-inner.index {
-  justify-content: center;
   text-align: center; }
-.intro-inner.catalog {
-  justify-content: flex-end;
-  width: 100%; }
+.intro-inner .intro-form {
+  max-width: 57rem;
+  margin: 0 auto; }
 
 /*=====  Index / Intro =====*/
+.intro-info {
+  line-height: calc(7/6); }
+
 .intro-title {
-  margin-bottom: 1rem;
-  line-height: 7rem; }
+  margin-bottom: 1rem; }
 
 .intro-subtitle {
-  margin-bottom: 4.5rem;
-  line-height: 3.5rem; }
+  margin-bottom: 4.5rem; }
 
 .intro-text {
-  margin-bottom: 4rem;
-  line-height: 2.1rem; }
+  margin-bottom: 4rem; }
 
 .form-item {
-  justify-content: space-between;
   margin-bottom: 3rem; }
   .form-item input {
     box-sizing: border-box;
@@ -677,12 +675,10 @@ p {
     margin: 0 auto; }
 
   .intro-title {
-    font-size: 5rem;
-    line-height: 1.1; }
+    font-size: 5rem; }
 
   .intro-subtitle {
-    font-size: 2.5rem;
-    line-height: 1.1; }
+    font-size: 2.5rem; }
 
   /*=====  Index / Subscriptions  =====*/
   .main.index {
@@ -715,8 +711,7 @@ p {
     font-size: 3rem; }
 
   .album-info {
-    font-size: 1.4rem;
-    line-height: 1.1; }
+    font-size: 1.4rem; }
 
   .album-release {
     margin-bottom: 1.5rem; }
@@ -798,7 +793,7 @@ p {
     padding-bottom: 15rem; }
 
   .intro-title {
-    font-size: 4.5rem; }
+    font-size: 4.2rem; }
 
   .intro-subtitle {
     margin-bottom: 4.5rem;
@@ -1050,8 +1045,7 @@ p {
     font-size: 1.8rem; }
 
   .intro-text {
-    font-size: 1.4rem;
-    line-height: 1; }
+    font-size: 1.4rem; }
 
   /*=====  Index / News  =====*/
   .album-cover img:last-child {
@@ -1127,12 +1121,10 @@ p {
 
   /*=====  Index / Intro  =====*/
   .intro-title {
-    font-size: 3rem;
-    line-height: 1; }
+    font-size: 3rem; }
 
   .intro-text {
-    font-size: 1.2rem;
-    line-height: 1; }
+    font-size: 1.2rem; }
 
   /*=====  Footer  =====*/
   .footer-info-item {

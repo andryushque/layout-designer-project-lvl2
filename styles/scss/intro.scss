@@ -21,36 +21,35 @@
 
 .intro-inner {
     &.index {
-        justify-content: center;
         text-align: center;
     }
 
-    &.catalog {
-        justify-content: flex-end;
-        width: 100%;
+    .intro-form {
+        max-width: 57rem;
+        margin: 0 auto;
     }
 }
 
 
 /*=====  Index / Intro =====*/
 
+.intro-info {
+    line-height: calc(7/6);
+}
+
 .intro-title {
     margin-bottom: 1rem;
-    line-height: 7rem;
 }
 
 .intro-subtitle {
     margin-bottom: 4.5rem;
-    line-height: 3.5rem;
 }
 
 .intro-text {
     margin-bottom: 4rem;
-    line-height: 2.1rem;
 }
 
 .form-item {
-    justify-content: space-between;
     margin-bottom: 3rem;
 
     input {
