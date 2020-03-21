@@ -1,19 +1,18 @@
 @import "variables";
 
 @media (max-width : 1280px) {
-    /*=====  Header  =====*/
-    .header-inner {
-        padding: 0 2rem;
+
+    .container {
+        width: 95%;
     }
+
+    /*=====  Header  =====*/
     .header-nav {
         margin-right: 0;
     }
 
 
     /*=====  Index / Subscriptions  =====*/
-    .subscriptions {
-        width: 95%;
-    }
     .subscription {
         width: 30%;
     }
@@ -22,9 +21,6 @@
     }
 
     /*=====  Index / News  =====*/
-    .news {
-        width: 95%;
-    }
     .news-item {
         justify-content: space-around;
     }
@@ -43,36 +39,10 @@
         }
     }
 
-    /*=====  Index / Application  =====*/
-    .application {
-        width: 95%;
-    }
-
-
-    /*=====  Catalog =====*/
-    .main-inner.catalog {
-        .main-item {
-            .main-block {
-                width: 95%;
-            }
-            .item-title {
-                width: 95%;
-            }
-        }
-    }
 
     /*=====  Catalog / Intro =====*/
     .intro-artist {
         justify-content: center;
-        .artist-name {
-            width: 95%;
-        }
-        .artist-fans {
-            width: 95%;
-        }
-        .intro-buttons {
-            width: 95%;
-        }
     }
 
     /*=====  Catalog / Discography =====*/
@@ -121,12 +91,10 @@
         justify-content: center;
     }
     .footer-info-inner {
-        width: 87.5%;
-        padding: 10rem 2rem;
+        padding: 10rem 0;
     }
     .footer-links-inner {
-        width: 87.5%;
-        padding: 5rem 2rem;
+        padding: 5rem 0;
     }
 }
 
@@ -144,7 +112,6 @@
 
     /*=====  Index / Intro  =====*/
     .intro-inner {
-        width: 90%;
         margin: 0 auto;
     }
     .intro-title {
@@ -261,6 +228,10 @@
 }
 
 @media (max-width : 768px) {
+    .container {
+        width: 87.5%;
+    }
+
     /*=====  Header  =====*/
     .header-inner {
         flex-wrap: wrap;
@@ -285,7 +256,6 @@
     .main-inner.index {
         .main-item {
             .item-title {
-                width: 87.5%;
                 margin-bottom: 5rem;
                 font-size: 3rem;
             }
@@ -318,16 +288,13 @@
         margin: 0;
 
         input {
-            width: 87.5%;
+            width: 100%;
             margin-bottom: 3rem;
 
             &:first-child {
                 margin-right: 0;
             }
         }
-    }
-    .intro-button {
-        width: 87.5%;
     }
 
     /*=====  Index / Subscriptions  =====*/
@@ -367,9 +334,6 @@
     }
 
     /*=====  Index / News  =====*/
-    .news {
-        width: 87.5%;
-    }
     .news-item {
         flex-wrap: wrap;
         justify-content: center;
@@ -415,7 +379,6 @@
 
     /*=====  Index / Application  =====*/
     .application {
-        width: 87.5%;
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -447,11 +410,7 @@
     /*=====  Catalog =====*/
     .main-inner.catalog {
         .main-item {
-            .main-block {
-                width: 87.5%;
-            }
             .item-title {
-                width: 87.5%;
                 font-size: 3.4rem;
             }
         }
@@ -470,17 +429,12 @@
         justify-content: center;
         margin-top: 0;
         .artist-name {
-            width: 87.5%;
             margin-bottom: 2.5rem;
             font-size: 4.8rem;
         }
         .artist-fans {
-            width: 87.5%;
             font-size: 1.6rem;
             margin-bottom: 4rem;
-        }
-        .intro-buttons {
-            width: 87.5%;
         }
     }
 
@@ -723,6 +677,7 @@
         font-size: 1.2rem;
     }
 
+
     /*=====  Footer  =====*/
     .footer-info-item {
         text-align: left;
@@ -738,3 +693,14 @@
     }
 }
 
+@media (max-width : 320px) {
+    /*=====  Catalog / Discography =====*/
+    .artist-data {
+        width: 13rem;
+    }
+
+    /*=====  Catalog / Similar =====*/
+    .album-data {
+        width: 13rem;
+    }
+}
