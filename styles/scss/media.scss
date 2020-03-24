@@ -549,6 +549,10 @@
         text-align: left;
     }
 
+    /*=====  Index / Subscriptions  =====*/
+    .item-info {
+        font-size: 1.6rem;
+    }
 
     /*=====  Catalog / Intro =====*/
     .intro-artist {
@@ -644,6 +648,11 @@
         font-size: 1.2rem;
     }
 
+    /*=====  Index / Subscriptions  =====*/
+    .item-info {
+        font-size: 1.4rem;
+    }
+
     /*=====  Index / Application  =====*/
     .application-block {
         img {
@@ -667,6 +676,11 @@
 }
 
 @media (max-width : 320px) {
+    /*=====  Index / Subscriptions  =====*/
+    .item-info {
+        font-size: 1.2rem;
+    }
+
     /*=====  Catalog / Discography =====*/
     .artist-data {
         width: 13rem;
