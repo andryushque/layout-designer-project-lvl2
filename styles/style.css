@@ -620,9 +620,6 @@ p {
     font-size: 2.5rem; }
 
   /*=====  Index / Subscriptions  =====*/
-  .main.index {
-    padding-top: 7.5rem; }
-
   .subscription {
     height: 46.5rem; }
 
@@ -975,6 +972,10 @@ p {
   .album-info {
     text-align: left; }
 
+  /*=====  Index / Subscriptions  =====*/
+  .item-info {
+    font-size: 1.6rem; }
+
   /*=====  Catalog / Intro =====*/
   .intro-artist .artist-name {
     font-size: 3rem; }
@@ -1042,6 +1043,10 @@ p {
   .intro-text {
     font-size: 1.2rem; }
 
+  /*=====  Index / Subscriptions  =====*/
+  .item-info {
+    font-size: 1.4rem; }
+
   /*=====  Index / Application  =====*/
   .application-block img {
     width: 100%; }
@@ -1058,6 +1063,10 @@ p {
   .footer-social {
     justify-content: flex-start; } }
 @media (max-width: 320px) {
+  /*=====  Index / Subscriptions  =====*/
+  .item-info {
+    font-size: 1.2rem; }
+
   /*=====  Catalog / Discography =====*/
   .artist-data {
     width: 13rem; }
