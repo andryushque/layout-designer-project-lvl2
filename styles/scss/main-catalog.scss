@@ -4,12 +4,10 @@
 /*=====  Main Catalog =====*/
 
 .main.catalog {
-    background: $black;
-    text-align: center;
     padding-top: 10rem;
 }
 
-.main-inner.catalog {
+.main.catalog .container {
     .main-item {
         flex-wrap: wrap;
         justify-content: center;
@@ -117,7 +115,6 @@
 
 .artist-data {
     justify-content: flex-start;
-    text-align: center;
 
     .artist-name {
         margin-bottom: 1rem;

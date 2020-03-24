@@ -20,22 +20,14 @@
 }
 
 .intro-inner {
-    &.index {
-        text-align: center;
-    }
-
     .intro-form {
-        max-width: 57rem;
+        // max-width: 57rem;
         margin: 0 auto;
     }
 }
 
 
 /*=====  Index / Intro =====*/
-
-.intro-info {
-    line-height: calc(7/6);
-}
 
 .intro-title {
     margin-bottom: 1rem;

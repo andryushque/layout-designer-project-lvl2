@@ -3,7 +3,7 @@
 @media (max-width : 1280px) {
 
     .container {
-        width: 95%;
+        // width: 95%;
     }
 
     /*=====  Header  =====*/
@@ -229,7 +229,7 @@
 
 @media (max-width : 768px) {
     .container {
-        width: 87.5%;
+        // width: 87.5%;
     }
 
     /*=====  Header  =====*/
@@ -253,7 +253,7 @@
     }
 
     /*=====  Index =====*/
-    .main-inner.index {
+    .main.index .container {
         .main-item {
             .item-title {
                 margin-bottom: 5rem;
@@ -408,7 +408,7 @@
 
 
     /*=====  Catalog =====*/
-    .main-inner.catalog {
+    .main.catalog .container {
         .main-item {
             .item-title {
                 font-size: 3.4rem;
@@ -542,8 +542,8 @@
 
 
     /*=====  Index + Catalog =====*/
-    .main-inner {
-        &.index, &.catalog {
+    .main.index, .main.catalog {
+        .container {
             .main-item {
                 .item-title {
                     font-size: 2.5rem;
@@ -659,8 +659,8 @@
 
 @media (max-width : 425px) {
     /*=====  Index + Catalog =====*/
-    .main-inner {
-        &.index, &.catalog {
+    .main.index, .main.catalog {
+        .container {
             .main-item {
                 .item-title {
                     font-size: 2rem;
