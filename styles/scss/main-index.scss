@@ -87,7 +87,6 @@
 /*=====  News  =====*/
 
 .news-item {
-    justify-content: flex-start;
     margin-bottom: 7rem;
 
     &:last-child {
@@ -95,31 +94,17 @@
     }
 }
 
-.news-item:nth-child(odd) {
-    .news-block:nth-child(even) {
-        .news-inner {
-            margin-left: 10rem;
-        }
-    }
-}
-.news-item:nth-child(even) {
-    .news-block:nth-child(odd) {
-        .news-inner {
-            margin-right: 10rem;
-        }
-    }
-}
-
-.news-content {
-    max-width: 60rem;
-    text-align: left;
-}
-
-.news-image {
-    max-width: 57rem;
-
-    img {
+.news-block {
+    > img {
         width: 100%;
+    }
+
+    &:nth-child(odd) {
+        margin-right: 3rem;
+    }
+
+    &:nth-child(even) {
+        margin-left: 3rem;
     }
 }
 
@@ -168,23 +153,24 @@
 
 /*=====  Application  =====*/
 
-.application {
-    justify-content: space-between;
-}
-
-.application-info {
-    box-sizing: border-box;
-    padding-right: 3rem;
-    text-align: left;
+.application-block {
     line-height: 1.5;
     color: #999999;
+
+    > img {
+        margin: 0 auto;
+    }
+
+    &:nth-child(odd) {
+        margin-right: 3rem;
+    }
+
+    &:nth-child(even) {
+        margin-left: 3rem;
+    }
 }
 
-.application-image {
-    margin: 0 auto;
-}
-
-.application-button button {
+.application-button {
     box-sizing: border-box;
     width: 17.5rem;
     height: 5rem;
