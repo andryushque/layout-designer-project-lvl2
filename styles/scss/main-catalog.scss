@@ -7,32 +7,8 @@
     padding-top: 10rem;
 }
 
-.main.catalog .container {
-    .main-item {
-        flex-wrap: wrap;
-        justify-content: center;
-
-        .item-title {
-            text-align: left;
-        }
-    }
-}
-
-.main-block {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
-
 
 /*=====  Popular  =====*/
-
-.popular-track {
-    justify-content: space-between;
-}
-
-.track-data {
-    justify-content: flex-start;
-}
 
 .track-cover{
     margin-right: 1.5rem;
@@ -43,17 +19,12 @@
     }
 }
 
-.track-info {
-    justify-content: center;
-    text-align: left;
+.track-name {
+    margin-bottom: .5rem;
+}
 
-    .track-name {
-        margin-bottom: .5rem;
-    }
-
-    .track-artist {
-        color: $grey;
-    }
+.track-artist {
+    color: $grey;
 }
 
 .track-length {
@@ -67,16 +38,10 @@
 .discography-album {
     width: 25rem;
     margin-right: 5rem;
-    justify-content: flex-start;
 
     &:nth-child(4n) {
         margin-right: 0;
     }
-}
-
-.album-data {
-    justify-content: flex-start;
-    text-align: left;
 }
 
 .album-cover {
@@ -106,23 +71,18 @@
 .similar-artist {
     width: 25rem;
     margin-right: 5rem;
-    justify-content: flex-start;
 
     &:nth-child(4n) {
         margin-right: 0;
     }
 }
 
-.artist-data {
-    justify-content: flex-start;
+.artist-name {
+    margin-bottom: 1rem;
+}
 
-    .artist-name {
-        margin-bottom: 1rem;
-    }
-
-    .artist-fans {
-        margin-bottom: 0;
-    }
+.artist-fans {
+    margin-bottom: 0;
 }
 
 .artist-photo {

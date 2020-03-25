@@ -12,7 +12,7 @@
         width: 30%;
     }
     .subscription-button button {
-        width: 75%;
+        width: 87.5%;
     }
 
     /*=====  Catalog / Intro =====*/
@@ -280,6 +280,10 @@
     }
     .subscription-button {
         margin-bottom: 4rem;
+
+        button {
+            width: 24rem;
+        }
     }
     .album-title {
         margin-bottom: 2.5rem;

@@ -50,16 +50,36 @@ p {
     margin: 0 auto;
 }
 
-.d-flex {
-    display: flex;
-}
-
 .d-inline-block {
     display: inline-block;
 }
 
-.column {
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
     flex-direction: column;
+}
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.flex-space-btw {
+    justify-content: space-between;
+}
+
+.flex-center {
+    justify-content: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
 }
 
 .ai-center {
