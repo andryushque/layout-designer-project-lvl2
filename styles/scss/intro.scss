@@ -90,16 +90,16 @@
 
 .intro-artist {
     flex-wrap: wrap;
-}
 
-.artist-name {
-    margin-bottom: 2.5rem;
-    line-height: 1;
-}
+    .artist-name {
+        margin-bottom: 2.5rem;
+        line-height: 1;
+    }
 
-.artist-fans {
-    margin-bottom: 4rem;
-    line-height: 1;
+    .artist-fans {
+        margin-bottom: 4rem;
+        line-height: 1;
+    }
 }
 
 .intro-buttons {

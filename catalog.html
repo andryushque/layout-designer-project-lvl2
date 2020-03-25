@@ -10,45 +10,34 @@
 
 <!-- Header -->
 <header class="header">
-    <div class="container">
-        <div class="header-inner d-flex ai-center">
-            <div class="header-left d-flex ai-center">
-                <div class="header-logo d-flex ai-center">
-                    <div class="header-logo-image">
-                        <img src="images/logo.svg" alt="logo">
-                    </div>
-                    <div class="header-logo-title fw-bold fz-11 tt-upper">
-                        <a class="header-link td-none" href="#">Music Box</a>
-                    </div>
-                </div>
-            </div>
-            <div class="header-middle d-flex ai-center">
-                <nav class="header-nav d-flex fz-11 fw-bold tt-upper">
-                    <a class="header-link td-none" href="index.html">Главная</a>
-                    <a class="header-link td-none active" href="#">Каталог</a>
-                    <a class="header-link td-none" href="#">Исполнители</a>
-                    <a class="header-link td-none" href="#">Контакты</a>
-                </nav>
-            </div>
-            <div class="header-right d-flex ai-center w-50">
-                <div class="header-search">
-                    <form>
-                        <input type="text" class="fz-11 tt-upper"  placeholder="Поиск...">
-                        <button type="submit">
-                            <img src="images/Search.png" alt="search">
-                        </button>
-                    </form>
-                </div>
-            </div>
+    <div class="header-inner container d-flex flex-space-btw ai-center">
 
-        </div> <!-- /.header-inner -->
-    </div> <!-- /.container -->
+        <div class="header-left">
+            <img class="header-image" src="images/logo.svg" alt="logo">
+            <a class="header-title header-link td-none fw-bold fz-11 tt-upper" href="#">Music Box</a>
+        </div>
+        <div class="header-middle">
+            <nav class="header-nav d-flex fz-11 fw-bold tt-upper">
+                <a class="header-link td-none" href="index.html">Главная</a>
+                <a class="header-link td-none active" href="#">Каталог</a>
+                <a class="header-link td-none" href="#">Исполнители</a>
+                <a class="header-link td-none" href="#">Контакты</a>
+            </nav>
+        </div>
+        <div class="header-right w-50">
+            <form class="header-search">
+                <input type="text" class="search-light fz-11 fw-bold tt-upper"  placeholder="Поиск..">
+            </form>
+        </div>
+
+    </div> <!-- /.header-inner -->
 </header>
 
 
 <!-- Intro -->
 <div class="intro catalog">
     <div class="container">
+
         <div class="intro-inner catalog w-100">
             <div class="intro-artist d-flex">
                 <h1 class="artist-name w-100">
@@ -67,6 +56,7 @@
                 </div>
             </div>
         </div> <!-- /.intro-inner -->
+
     </div> <!-- /.container -->
 </div> <!-- /.intro -->
 
@@ -74,6 +64,7 @@
 <!-- Main Catalog -->
 <div class="main catalog ta-center">
     <div class="container">
+
         <div class="main-item main-popular d-flex flex-center flex-wrap mb-100">
             <h2 class="item-title ta-left w-100 mb-50">Популярные треки</h2>
 

@@ -157,28 +157,28 @@ p {
 /*=====  Header  =====*/
 .header {
   position: absolute;
-  top: 3rem;
+  top: 2.5rem;
   left: 0;
   width: 100%; }
 
 .header-inner {
-  justify-content: space-between;
-  height: 100%;
-  padding: 0; }
+  height: 100%; }
 
 .header-left {
-  justify-content: flex-start; }
+  position: relative; }
 
-.header-logo-image img {
-  height: 2rem;
-  margin-right: .5rem; }
-
-.header-logo-title .header-link {
-  color: #FFF; }
+.header-image {
+  position: absolute;
+  top: -.25rem;
+  left: 0;
+  height: 2rem; }
 
 .header-link {
   margin-left: 3rem;
   color: #808080; }
+  .header-link.header-title {
+    margin-left: 2.5rem;
+    color: #FFF; }
   .header-link.active {
     color: #FFF; }
   .header-link:first-child {
@@ -187,37 +187,33 @@ p {
     color: #FFF;
     transition: color .2s ease; }
 
-.header-right {
-  justify-content: flex-end; }
-
 .header-search {
-  background: #3C3B3D;
-  border-radius: 3rem; }
-  .header-search form {
-    width: 28rem;
-    position: relative; }
-    .header-search form input {
-      box-sizing: border-box;
-      width: 28rem;
-      height: 3rem;
-      border-radius: 3rem;
-      background: #3C3B3D;
-      border: none;
-      outline: none; }
-      .header-search form input::placeholder {
-        padding-left: 1.3rem; }
-      .header-search form input:focus {
-        padding-left: 1.3rem;
-        color: gray;
-        font-size: 1.4rem; }
-        .header-search form input:focus::placeholder {
-          color: transparent; }
-  .header-search button {
-    position: absolute;
-    background: none;
+  width: 28rem;
+  margin-left: auto;
+  margin-right: 0; }
+  .header-search input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 3rem;
+    padding-left: 1.4rem;
+    border-radius: 3rem;
     border: none;
-    top: .7rem;
-    right: .7rem; }
+    outline: none; }
+    .header-search input:focus {
+      padding-left: 1.4rem;
+      font-size: 1.2rem; }
+      .header-search input:focus::placeholder {
+        color: transparent; }
+  .header-search .search-dark {
+    background: #3C3B3D;
+    color: gray; }
+    .header-search .search-dark:focus {
+      color: gray; }
+  .header-search .search-light {
+    background: #FFF;
+    color: #3c3b3d; }
+    .header-search .search-light:focus {
+      color: #3c3b3d; }
 
 /*=====  Intro  =====*/
 .intro.index {
@@ -278,14 +274,12 @@ p {
 /*=====  Catalog / Intro =====*/
 .intro-artist {
   flex-wrap: wrap; }
-
-.artist-name {
-  margin-bottom: 2.5rem;
-  line-height: 1; }
-
-.artist-fans {
-  margin-bottom: 4rem;
-  line-height: 1; }
+  .intro-artist .artist-name {
+    margin-bottom: 2.5rem;
+    line-height: 1; }
+  .intro-artist .artist-fans {
+    margin-bottom: 4rem;
+    line-height: 1; }
 
 .intro-buttons button {
   position: relative;
@@ -593,14 +587,11 @@ p {
     padding: 5rem 0; } }
 @media (max-width: 1024px) {
   /*=====  Header  =====*/
-  .header-right {
-    width: 40%; }
-
   .header-link {
     margin-left: 1.5rem; }
 
-  .header-search form input {
-    width: 22rem; }
+  .header-right {
+    width: 40%; }
 
   /*=====  Index / Intro  =====*/
   .intro-inner {
@@ -697,19 +688,26 @@ p {
     flex-wrap: wrap; }
 
   .header-left {
-    width: 50%;
-    margin-bottom: 1rem; }
+    width: 100%;
+    margin-bottom: 2rem; }
 
   .header-middle {
-    width: 50%;
-    justify-content: flex-end;
-    margin-bottom: 1rem; }
-
-  .header-right {
+    order: 2;
     width: 100%; }
 
-  .header-search form input {
-    width: 28rem; }
+  .header-right {
+    width: 100%;
+    margin-bottom: 2rem; }
+    .header-right .header-search {
+      margin-left: 0; }
+
+  .header-nav {
+    width: 100%;
+    flex-wrap: wrap; }
+
+  .header-link {
+    width: 100%;
+    margin: 0 0 1rem; }
 
   /*=====  Index =====*/
   .main.index .container .main-item .item-title {
@@ -911,30 +909,6 @@ p {
   .footer-social {
     justify-content: flex-start; } }
 @media (max-width: 565px) {
-  /*=====  Header  =====*/
-  .header-left {
-    width: 100%;
-    justify-content: flex-start;
-    margin-bottom: 2rem; }
-
-  .header-middle {
-    order: 2;
-    width: 100%;
-    justify-content: flex-start; }
-
-  .header-right {
-    width: 100%;
-    justify-content: flex-start;
-    margin-bottom: 2rem; }
-
-  .header-nav {
-    width: 100%;
-    flex-wrap: wrap; }
-
-  .header-link {
-    width: 100%;
-    margin: 0 0 1rem; }
-
   /*=====  Index + Catalog =====*/
   .main.index .container .main-item .item-title, .main.catalog .container .main-item .item-title {
     font-size: 2.5rem; }
