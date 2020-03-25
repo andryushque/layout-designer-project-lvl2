@@ -15,7 +15,20 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
-  line-height: 1.1; }
+  line-height: 1.1;
+  font-weight: 700; }
+
+h1, h2 {
+  text-transform: uppercase; }
+
+h1 {
+  font-size: 6rem; }
+
+h2 {
+  font-size: 3.8rem; }
+
+h3 {
+  font-size: 1.8rem; }
 
 p {
   margin: 0;
@@ -822,8 +835,6 @@ p {
   .application-block {
     width: 100%;
     text-align: center; }
-    .application-block p {
-      margin-bottom: 2.5rem; }
     .application-block img {
       margin-bottom: 2.5rem; }
     .application-block:nth-child(odd) {
