@@ -514,7 +514,8 @@ p {
 
 .footer-info-inner {
   justify-content: flex-start;
-  padding: 8rem 0 10rem; }
+  padding-top: 8rem;
+  padding-bottom: 10rem; }
 
 .footer-info-item {
   margin-right: 10rem; }
@@ -605,9 +606,6 @@ p {
   /*=====  Footer  =====*/
   .footer-info {
     justify-content: center; }
-
-  .footer-info-inner {
-    padding: 10rem 0; }
 
   .footer-links-inner {
     padding: 5rem 0; } }
