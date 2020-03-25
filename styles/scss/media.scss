@@ -63,10 +63,13 @@
 
     /*=====  Footer  =====*/
     .footer-info {
-        justify-content: center;
+        justify-content: space-between;
     }
-    .footer-links-inner {
-        padding: 5rem 0;
+    .footer-info-item {
+        margin-right: 0;
+        &:last-child {
+            margin-right: 0;
+        }
     }
 }
 
@@ -159,7 +162,7 @@
 
 
     /*=====  Footer  =====*/
-    .footer-info-inner {
+    .footer-info {
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -176,18 +179,6 @@
         margin-bottom: 1.5rem;
         &:last-child {
             margin-bottom: 0;
-        }
-    }
-    .footer-links-inner {
-        justify-content: center;
-    }
-    .footer-social {
-        justify-content: center;
-        .footer-social-link {
-            margin-right: 2rem;
-            &:last-child {
-                margin-right: 0;
-            }
         }
     }
 }
@@ -456,7 +447,7 @@
 
 
     /*=====  Footer  =====*/
-    .footer-info-inner {
+    .footer-info {
         justify-content: space-between;
     }
     .footer-info-item {
@@ -475,9 +466,6 @@
         &:last-child {
             margin-bottom: 0;
         }
-    }
-    .footer-social {
-        justify-content: flex-start;
     }
 }
 
@@ -568,37 +556,28 @@
 
 
     /*=====  Footer  =====*/
-    .footer-inner {
-        justify-content: center;
-    }
     .footer-info-item {
         width: 100%;
         margin-bottom: 4rem;
-        text-align: center;
+        text-align: left;
         &:last-child {
             margin-bottom: 0;
-            text-align: center;
+            text-align: left;
             width: 100%;
         }
     }
-    .footer-links-item {
-        width: 100%;
+    .footer-links {
         flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
 
         .footer-list-link {
             width: 100%;
             margin-right: 0;
             margin-bottom: 2rem;
-            text-align: center;
+            text-align: left;
             &:last-child {
                 margin-bottom: 0;
             }
         }
-    }
-    .footer-social {
-        justify-content: center;
     }
 }
 
@@ -632,20 +611,6 @@
         img {
             width: 100%;
         }
-    }
-
-    /*=====  Footer  =====*/
-    .footer-info-item {
-        text-align: left;
-        &:last-child {
-            text-align: left;
-        }
-    }
-    .footer-links-item .footer-list-link {
-        text-align: left;
-    }
-    .footer-social {
-        justify-content: flex-start;
     }
 }
 
