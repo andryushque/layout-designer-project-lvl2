@@ -19,12 +19,6 @@
     }
 }
 
-.intro-inner {
-    .intro-form {
-        margin: 0 auto;
-    }
-}
-
 
 /*=====  Index / Intro =====*/
 
@@ -70,6 +64,10 @@
             }
         }
     }
+}
+
+.intro-form {
+    margin: 0 auto;
 }
 
 .btn-access {

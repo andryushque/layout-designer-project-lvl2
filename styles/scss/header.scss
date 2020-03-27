@@ -10,18 +10,11 @@
     width: 100%;
 }
 
-.header-inner {
-    height: 100%;
-}
-
 .header-left {
-    position: relative;
+    margin-right: 11.2rem;
 }
 
 .header-image {
-    position: absolute;
-    top: -.25rem;
-    left: 0;
     height: 2rem;
 }
 
@@ -37,7 +30,7 @@
     text-decoration: none;
 
     &.header-title {
-        margin-left: 2.5rem;
+        margin-left: .5rem;
         color: $white;
     }
 
@@ -53,6 +46,10 @@
         color: $white;
         transition: color .2s ease;
     }
+}
+
+.header-right {
+    margin-left: auto;
 }
 
 .header-search {

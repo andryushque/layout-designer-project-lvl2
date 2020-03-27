@@ -71,11 +71,11 @@
 
 @media (max-width : 1024px) {
     /*=====  Header  =====*/
+    .header-left {
+        margin-right: 5rem;
+    }
     .header-link {
         margin-left: 1.5rem;
-    }
-    .header-right {
-        width: 40%;
     }
 
     /*=====  Index / Intro  =====*/
@@ -207,6 +207,7 @@
     }
     .header-left {
         width: 100%;
+        margin-right: 0;
         margin-bottom: 2rem;
     }
     .header-middle {
@@ -228,6 +229,10 @@
     .header-link {
         width: 100%;
         margin: 0 0 1rem;
+
+        &.header-title {
+            margin-bottom: 0;
+        }
     }
 
     /*=====  Index =====*/
