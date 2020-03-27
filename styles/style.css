@@ -432,14 +432,21 @@ p {
     width: 5rem;
     height: 5rem; }
 
+.track-info {
+  margin: auto 0; }
+
 .track-name {
-  margin-bottom: .5rem; }
+  margin-bottom: .5rem;
+  font-size: 1.4rem; }
 
 .track-artist {
-  color: #808080; }
+  color: #808080;
+  font-size: 1.2rem; }
 
 .track-length {
-  margin-right: 12.3rem;
+  margin: auto 0;
+  margin-right: 7rem;
+  font-size: 1.4rem;
   color: #8C8C8C; }
 
 /*=====  Didcography  =====*/
@@ -644,10 +651,6 @@ p {
       margin-right: 2rem; }
     .application-block:nth-child(even) {
       margin-left: 2rem; }
-
-  /*=====  Catalog / Popular =====*/
-  .track-length {
-    margin-right: 7.5rem; }
 
   /*=====  Catalog / Discography =====*/
   .discography-album {

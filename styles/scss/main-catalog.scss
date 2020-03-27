@@ -19,16 +19,24 @@
     }
 }
 
+.track-info {
+    margin: auto 0;
+}
+
 .track-name {
     margin-bottom: .5rem;
+    font-size: 1.4rem;
 }
 
 .track-artist {
     color: $grey;
+    font-size: 1.2rem;
 }
 
 .track-length {
-    margin-right: 12.3rem;
+    margin: auto 0;
+    margin-right: 7rem;
+    font-size: 1.4rem;
     color: #8C8C8C;
 }
 
