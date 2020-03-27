@@ -122,10 +122,29 @@ p {
     margin-top: 10rem;
 }
 
+.mr-20 {
+    margin-right: 2rem;
+}
+
 .btn {
-    font-family: $default-font;
-    outline: none;
     padding: 0;
+    outline: none;
+    border: 1px solid $white;
+    box-sizing: border-box;
+
+    background: 0;
+
+    font-family: $default-font;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: $white;
+    text-transform: uppercase;
+
+    &:focus, &:hover {
+        cursor: pointer;
+        box-shadow: 0 0 2px $white;
+        transition: box-shadow .2s ease;
+    }
 }
 
 

@@ -11,7 +11,7 @@
     .subscription {
         width: 30%;
     }
-    .subscription-button button {
+    .btn-sub {
         width: 87.5%;
     }
 
@@ -100,7 +100,7 @@
     .subscription-type {
         margin-top: 2rem;
     }
-    .subscription-button {
+    .btn-sub {
         font-size: 2rem;
     }
     .item-info {
@@ -275,12 +275,9 @@
     .subscription-bottom {
         margin-bottom: 1.5rem;
     }
-    .subscription-button {
+    .btn-sub {
+        width: 24rem;
         margin-bottom: 4rem;
-
-        button {
-            width: 24rem;
-        }
     }
     .album-title {
         margin-bottom: 2.5rem;
@@ -334,7 +331,7 @@
         }
 
     }
-    .news-button {
+    .btn-album {
         width: 28rem;
     }
 
@@ -360,7 +357,7 @@
             margin-left: 0;
         }
     }
-    .application-button {
+    .btn-app {
         width: 28rem;
     }
 
@@ -524,16 +521,15 @@
         .artist-fans {
             font-size: 1.4rem;
         }
-        .intro-buttons {
-            button {
-                width: 28rem;
-                margin-bottom: 2.5rem;
-                margin-right: 0;
-
-                &:last-child {
-                    margin-bottom: 0;
-                }
-            }
+        .btn-mix, .btn-fav {
+            width: 28rem;
+            margin-right: 0;
+        }
+        .btn-mix {
+            margin-bottom: 2.5rem;
+        }
+        .btn-fav {
+            margin-bottom: 0;
         }
     }
 

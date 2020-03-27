@@ -50,20 +50,16 @@
     }
 }
 
-.subscription-button button {
-    box-sizing: border-box;
+.btn-sub {
     width: 30rem;
     height: 7rem;
 
-    border: 4px solid $white;
+    border-width: .4rem;
     border-radius: .4rem;
     background-color: transparent;
-    color: $white;
 
-    &:focus, &:hover {
-        cursor: pointer;
-        box-shadow: 0 0 2px $white;
-    }
+    font-size: 2.4rem;
+    font-weight: 300;
 }
 
 .subscription-info {
@@ -124,19 +120,13 @@
     }
 }
 
-.news-button {
-    box-sizing: border-box;
+.btn-album {
     width: 13rem;
     height: 4rem;
 
-    border: 1px solid $white;
-    background-color: transparent;
-    color: $white;
-
-    &:focus, &:hover {
-        cursor: pointer;
-        box-shadow: 0 0 2px $white;
-    }
+    font-size: 1.2rem;
+    color: #8C8C8C;
+    border-color: #E9E9E9;
 }
 
 
@@ -159,17 +149,12 @@
     }
 }
 
-.application-button {
-    box-sizing: border-box;
+.btn-app {
     width: 17.5rem;
     height: 5rem;
     border: none;
     border-radius: 5rem;
     background-color: $pink;
-    color: $white;
-
-    &:focus, &:hover {
-        cursor: pointer;
-        box-shadow: 0 0 2px $white;
-    }
+    text-transform: capitalize;
+    font-weight: 300;
 }
