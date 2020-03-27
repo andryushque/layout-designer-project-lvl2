@@ -547,10 +547,6 @@ p {
   .btn-sub {
     width: 87.5%; }
 
-  /*=====  Catalog / Intro =====*/
-  .intro-artist {
-    justify-content: center; }
-
   /*=====  Catalog / Discography =====*/
   .discography-album {
     width: 25%;
@@ -833,7 +829,6 @@ p {
     padding-bottom: 10rem; }
 
   .intro-artist {
-    justify-content: center;
     margin-top: 0; }
     .intro-artist .artist-name {
       margin-bottom: 2.5rem;
