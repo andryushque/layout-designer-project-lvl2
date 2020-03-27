@@ -47,8 +47,16 @@
     width: 25rem;
     margin-right: 5rem;
 
+    &:nth-child(-n+4) {
+        margin-bottom: 5rem;
+    }
+
     &:nth-child(4n) {
         margin-right: 0;
+    }
+
+    &:empty {
+      flex: 0 0 25rem;
     }
 }
 
@@ -71,6 +79,12 @@
 
 .album-name {
     margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.album-year {
+    font-size: 1.6rem;
 }
 
 
@@ -80,17 +94,17 @@
     width: 25rem;
     margin-right: 5rem;
 
+    &:nth-child(-n+4) {
+        margin-bottom: 5rem;
+    }
+
     &:nth-child(4n) {
         margin-right: 0;
     }
-}
 
-.artist-name {
-    margin-bottom: 1rem;
-}
-
-.artist-fans {
-    margin-bottom: 0;
+    &:empty {
+      flex: 0 0 25rem;
+    }
 }
 
 .artist-photo {
@@ -101,4 +115,13 @@
     }
 }
 
+.artist-name {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
 
+.artist-fans {
+    margin-bottom: 0;
+    font-size: 1.6rem;
+}

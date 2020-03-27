@@ -18,17 +18,16 @@
 
     /*=====  Catalog / Discography =====*/
     .discography-album {
-        width: 25%;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
+        width: 24%;
         margin-right: 0;
+
         &:nth-child(4n) {
             margin-right: 0;
         }
-    }
-    .album-data {
-        width: 95%;
+
+        &:empty {
+            flex: 0 0 24%;
+        }
     }
     .album-cover {
         img:first-child {
@@ -39,15 +38,16 @@
 
     /*=====  Catalog / Similar =====*/
     .similar-artist {
-        width: 25%;
-        justify-content: flex-start;
+        width: 24%;
         margin-right: 0;
+
         &:nth-child(4n) {
             margin-right: 0;
         }
-    }
-    .artist-data {
-        width: 95%;
+
+        &:empty {
+            flex: 0 0 24%;
+        }
     }
     .artist-photo {
         img {
@@ -144,12 +144,37 @@
 
     /*=====  Catalog / Discography =====*/
     .discography-album {
-        width: 33.33333%;
+        width: 32%;
+
+        &:nth-child(-n+4) {
+            margin-bottom: 0;
+        }
+
+        &:nth-child(-n+3) {
+            margin-bottom: 5rem;
+        }
+
+        &:empty {
+            flex: 0 0 32%;
+        }
     }
 
     /*=====  Catalog / Similar =====*/
     .similar-artist {
-        width: 33.33333%;
+        width: 32%;
+        margin-bottom: 0;
+
+        &:nth-child(-n+4) {
+            margin-bottom: 0;
+        }
+
+        &:nth-child(-n+6) {
+            margin-bottom: 5rem;
+        }
+
+        &:empty {
+            flex: 0 0 32%;
+        }
     }
 
 
@@ -403,9 +428,14 @@
 
     /*=====  Catalog / Discography =====*/
     .discography-album {
-        width: 50%;
-        &:nth-child(2n) {
-            justify-content: flex-end;
+        width: 48%;
+
+        &:nth-child(-n+3) {
+            margin-bottom: 0;
+        }
+
+        &:nth-child(-n+4) {
+            margin-bottom: 5rem;
         }
     }
     .album-name {
@@ -417,13 +447,11 @@
 
     /*=====  Catalog / Similar =====*/
     .similar-artist {
-        width: 50%;
-        margin-bottom: 5rem;
-        &:nth-child(2n) {
-            justify-content: flex-end;
-        }
-        &:nth-last-child(-n+2) {
-            margin-bottom: 0;
+        width: 48%;
+        margin-bottom: 0;
+
+        &:nth-child(-n+6) {
+            margin-bottom: 5rem;
         }
     }
     .artist-name {

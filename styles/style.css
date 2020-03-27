@@ -453,8 +453,12 @@ p {
 .discography-album {
   width: 25rem;
   margin-right: 5rem; }
+  .discography-album:nth-child(-n+4) {
+    margin-bottom: 5rem; }
   .discography-album:nth-child(4n) {
     margin-right: 0; }
+  .discography-album:empty {
+    flex: 0 0 25rem; }
 
 .album-cover {
   position: relative;
@@ -470,26 +474,38 @@ p {
     filter: invert(1); }
 
 .album-name {
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 700; }
+
+.album-year {
+  font-size: 1.6rem; }
 
 /*=====  Similar  =====*/
 .similar-artist {
   width: 25rem;
   margin-right: 5rem; }
+  .similar-artist:nth-child(-n+4) {
+    margin-bottom: 5rem; }
   .similar-artist:nth-child(4n) {
     margin-right: 0; }
-
-.artist-name {
-  margin-bottom: 1rem; }
-
-.artist-fans {
-  margin-bottom: 0; }
+  .similar-artist:empty {
+    flex: 0 0 25rem; }
 
 .artist-photo {
   margin-bottom: 1.5rem; }
   .artist-photo img {
     width: 25rem;
     height: 25rem; }
+
+.artist-name {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 700; }
+
+.artist-fans {
+  margin-bottom: 0;
+  font-size: 1.6rem; }
 
 /*=====  Footer  =====*/
 .footer {
@@ -556,16 +572,12 @@ p {
 
   /*=====  Catalog / Discography =====*/
   .discography-album {
-    width: 25%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    width: 24%;
     margin-right: 0; }
     .discography-album:nth-child(4n) {
       margin-right: 0; }
-
-  .album-data {
-    width: 95%; }
+    .discography-album:empty {
+      flex: 0 0 24%; }
 
   .album-cover img:first-child {
     width: 100%;
@@ -573,14 +585,12 @@ p {
 
   /*=====  Catalog / Similar =====*/
   .similar-artist {
-    width: 25%;
-    justify-content: flex-start;
+    width: 24%;
     margin-right: 0; }
     .similar-artist:nth-child(4n) {
       margin-right: 0; }
-
-  .artist-data {
-    width: 95%; }
+    .similar-artist:empty {
+      flex: 0 0 24%; }
 
   .artist-photo img {
     width: 100%;
@@ -654,11 +664,24 @@ p {
 
   /*=====  Catalog / Discography =====*/
   .discography-album {
-    width: 33.33333%; }
+    width: 32%; }
+    .discography-album:nth-child(-n+4) {
+      margin-bottom: 0; }
+    .discography-album:nth-child(-n+3) {
+      margin-bottom: 5rem; }
+    .discography-album:empty {
+      flex: 0 0 32%; }
 
   /*=====  Catalog / Similar =====*/
   .similar-artist {
-    width: 33.33333%; }
+    width: 32%;
+    margin-bottom: 0; }
+    .similar-artist:nth-child(-n+4) {
+      margin-bottom: 0; }
+    .similar-artist:nth-child(-n+6) {
+      margin-bottom: 5rem; }
+    .similar-artist:empty {
+      flex: 0 0 32%; }
 
   /*=====  Footer  =====*/
   .footer-info {
@@ -856,9 +879,11 @@ p {
 
   /*=====  Catalog / Discography =====*/
   .discography-album {
-    width: 50%; }
-    .discography-album:nth-child(2n) {
-      justify-content: flex-end; }
+    width: 48%; }
+    .discography-album:nth-child(-n+3) {
+      margin-bottom: 0; }
+    .discography-album:nth-child(-n+4) {
+      margin-bottom: 5rem; }
 
   .album-name {
     font-size: 1.8rem; }
@@ -868,12 +893,10 @@ p {
 
   /*=====  Catalog / Similar =====*/
   .similar-artist {
-    width: 50%;
-    margin-bottom: 5rem; }
-    .similar-artist:nth-child(2n) {
-      justify-content: flex-end; }
-    .similar-artist:nth-last-child(-n+2) {
-      margin-bottom: 0; }
+    width: 48%;
+    margin-bottom: 0; }
+    .similar-artist:nth-child(-n+6) {
+      margin-bottom: 5rem; }
 
   .artist-name {
     font-size: 1.8rem; }
