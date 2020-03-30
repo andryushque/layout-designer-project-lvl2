@@ -14,7 +14,10 @@
     margin: 0 auto 5rem;
 }
 
-.subscription {
+.subscription-item {
+    justify-content: space-between;
+    flex-direction: column;
+
     width: 35rem;
     height: 58rem;
 
@@ -24,18 +27,16 @@
     &:hover {
         box-shadow: 0 0 2px $darkgrey;
     }
+}
 
-    &.free {
-        background: url(../images/subscribe_1.png) center 100% no-repeat;
-    }
-
-    &.standart {
-        background: url(../images/subscribe_2.png) center 100% no-repeat;
-    }
-
-    &.premium {
-        background: url(../images/subscribe_3.png) center 100% no-repeat;
-    }
+.subscription-free {
+    background: url(../images/subscribe_1.png) center 100% no-repeat;
+}
+.subscription-standart {
+    background: url(../images/subscribe_2.png) center 100% no-repeat;
+}
+.subscription-premium {
+    background: url(../images/subscribe_3.png) center 100% no-repeat;
 }
 
 .subscription-price {
@@ -79,8 +80,15 @@
 }
 
 .news-block {
-    > img {
+    .news-photo {
         width: 100%;
+    }
+
+    h2 {
+        margin-bottom: 2.5rem;
+        font-size: 3rem;
+        font-weight: 300;
+        text-transform: capitalize;
     }
 
     &:nth-child(odd) {
@@ -92,29 +100,29 @@
     }
 }
 
-.album-info {
+.news-content {
     margin-bottom: 1.6rem;
     line-height: 2;
     color: #8C8C8C;
 }
 
-.album-release {
+.news-author {
     margin-bottom: 4.5rem;
 
-    img {
+    .photo {
         margin-right: 2rem;
         border-radius: 50%;
         border: 1px solid $white;
     }
 
-    span:first-of-type {
+    .author {
         color: $yellow;
         padding-right: 2rem;
         margin-right: 2rem;
         border-right: 1px solid $white;
     }
 
-    span.date {
+    .date {
         color: #555555;
     }
 }

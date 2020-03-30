@@ -271,6 +271,13 @@ p {
   padding-bottom: 25.4rem;
   background: url(../images/banner.png) center 75% no-repeat;
   background-size: cover; }
+  .intro.index h1 {
+    margin-bottom: 1rem; }
+  .intro.index h2 {
+    font-size: 3rem;
+    margin-bottom: 4.5rem; }
+  .intro.index h3 {
+    margin-bottom: 4rem; }
 .intro.catalog {
   padding-top: 28rem;
   padding-bottom: 8.2rem;
@@ -278,15 +285,6 @@ p {
   background-size: cover; }
 
 /*=====  Index / Intro =====*/
-.intro-title {
-  margin-bottom: 1rem; }
-
-.intro-subtitle {
-  margin-bottom: 4.5rem; }
-
-.intro-text {
-  margin-bottom: 4rem; }
-
 .form-item {
   margin-bottom: 3rem; }
   .form-item input {
@@ -349,19 +347,24 @@ p {
 .subscriptions {
   margin: 0 auto 5rem; }
 
-.subscription {
+.subscription-item {
+  justify-content: space-between;
+  flex-direction: column;
   width: 35rem;
   height: 58rem;
   background-size: cover;
   border-radius: 1rem; }
-  .subscription:hover {
+  .subscription-item:hover {
     box-shadow: 0 0 2px #3C3B3D; }
-  .subscription.free {
-    background: url(../images/subscribe_1.png) center 100% no-repeat; }
-  .subscription.standart {
-    background: url(../images/subscribe_2.png) center 100% no-repeat; }
-  .subscription.premium {
-    background: url(../images/subscribe_3.png) center 100% no-repeat; }
+
+.subscription-free {
+  background: url(../images/subscribe_1.png) center 100% no-repeat; }
+
+.subscription-standart {
+  background: url(../images/subscribe_2.png) center 100% no-repeat; }
+
+.subscription-premium {
+  background: url(../images/subscribe_3.png) center 100% no-repeat; }
 
 .subscription-price {
   margin-bottom: 4rem; }
@@ -388,30 +391,35 @@ p {
   .news-item:last-child {
     margin-bottom: 0; }
 
-.news-block > img {
+.news-block .news-photo {
   width: 100%; }
+.news-block h2 {
+  margin-bottom: 2.5rem;
+  font-size: 3rem;
+  font-weight: 300;
+  text-transform: capitalize; }
 .news-block:nth-child(odd) {
   margin-right: 3rem; }
 .news-block:nth-child(even) {
   margin-left: 3rem; }
 
-.album-info {
+.news-content {
   margin-bottom: 1.6rem;
   line-height: 2;
   color: #8C8C8C; }
 
-.album-release {
+.news-author {
   margin-bottom: 4.5rem; }
-  .album-release img {
+  .news-author .photo {
     margin-right: 2rem;
     border-radius: 50%;
     border: 1px solid #FFF; }
-  .album-release span:first-of-type {
+  .news-author .author {
     color: #F89202;
     padding-right: 2rem;
     margin-right: 2rem;
     border-right: 1px solid #FFF; }
-  .album-release span.date {
+  .news-author .date {
     color: #555555; }
 
 .btn-outline-grey {
@@ -578,7 +586,7 @@ p {
     margin-right: 0; }
 
   /*=====  Index / Subscriptions  =====*/
-  .subscription {
+  .subscription-item {
     width: 30%; }
 
   .btn-outline-white {
@@ -602,43 +610,39 @@ p {
     margin-left: 1.5rem; }
 
   /*=====  Index / Intro  =====*/
-  .intro-title {
+  .intro.index h1 {
     font-size: 5rem; }
-
-  .intro-subtitle {
+  .intro.index h2 {
     font-size: 2.5rem; }
 
   /*=====  Index / Subscriptions  =====*/
-  .subscription {
+  .subscription-item {
     height: 46.5rem; }
 
   .subscription-type {
     margin-top: 2rem; }
 
-  .btn-outline-white {
+  .subscriptions-info {
     font-size: 2rem; }
 
-  .item-info {
+  .btn-outline-white {
     font-size: 2rem; }
 
   /*=====  Index / News  =====*/
   .news-item {
     margin-bottom: 5rem; }
 
+  .news-block h2 {
+    margin-bottom: 1.5rem;
+    font-size: 3rem; }
+  .news-block .news-content {
+    font-size: 1.4rem; }
+  .news-block .news-author {
+    margin-bottom: 2.5rem; }
   .news-block:nth-child(odd) {
     margin-right: 2rem; }
   .news-block:nth-child(even) {
     margin-left: 2rem; }
-
-  .album-title {
-    margin-bottom: 1.5rem;
-    font-size: 3rem; }
-
-  .album-info {
-    font-size: 1.4rem; }
-
-  .album-release {
-    margin-bottom: 1.5rem; }
 
   /*=====  Index / Application  =====*/
   .application-block {
@@ -712,24 +716,21 @@ p {
       margin-bottom: 0; }
 
   /*=====  Index =====*/
-  .main.index .container .main-item .item-title {
+  .main.index .container .main-item > h2 {
     margin-bottom: 5rem;
     font-size: 3rem; }
 
   /*=====  Index / Intro  =====*/
   .intro.index {
     padding-bottom: 15rem; }
-
-  .intro-title {
-    font-size: 4.2rem; }
-
-  .intro-subtitle {
-    margin-bottom: 4.5rem;
-    font-size: 2.2rem; }
-
-  .intro-text {
-    margin-bottom: 4rem;
-    font-size: 1.6rem; }
+    .intro.index h1 {
+      font-size: 4.2rem; }
+    .intro.index h2 {
+      margin-bottom: 4.5rem;
+      font-size: 2.2rem; }
+    .intro.index h3 {
+      margin-bottom: 4rem;
+      font-size: 1.6rem; }
 
   .intro-form {
     width: 100%;
@@ -752,32 +753,22 @@ p {
     justify-content: center;
     width: 28rem; }
 
-  .subscription {
+  .subscription-item {
     width: 28rem;
     height: 46rem;
     margin-bottom: 5rem; }
-    .subscription:last-child {
+    .subscription-item:last-child {
       margin-bottom: 0; }
 
   .subscription-bottom {
     margin-bottom: 1.5rem; }
 
+  .subscriptions-info {
+    font-size: 1.8rem; }
+
   .btn-outline-white {
     width: 24rem;
     margin-bottom: 4rem; }
-
-  .album-title {
-    margin-bottom: 2.5rem; }
-
-  .album-info {
-    margin-bottom: 2.5rem; }
-
-  .album-release {
-    margin-bottom: 2.5rem;
-    justify-content: center; }
-
-  .item-info {
-    font-size: 1.8rem; }
 
   /*=====  Index / News  =====*/
   .news-item {
@@ -787,8 +778,10 @@ p {
   .news-block {
     width: 100%;
     text-align: center; }
-    .news-block > img {
+    .news-block .news-photo {
       margin: 0 auto 2rem; }
+    .news-block h2 {
+      margin-bottom: 2.5rem; }
     .news-block:nth-child(odd) {
       margin-right: 0; }
     .news-block:nth-child(even) {
@@ -797,13 +790,16 @@ p {
   .news-item:nth-child(even) .news-block:nth-child(odd) {
     order: 2; }
 
-  .album-info {
+  .news-content {
     margin-bottom: 2.5rem;
     line-height: 2.2; }
 
-  .album-release span:first-of-type {
-    padding-right: 4rem;
-    margin-right: 4rem; }
+  .news-author {
+    margin-bottom: 2.5rem;
+    justify-content: center; }
+    .news-author .author {
+      padding-right: 4rem;
+      margin-right: 4rem; }
 
   .btn-outline-grey {
     width: 28rem; }
@@ -828,7 +824,7 @@ p {
     width: 28rem; }
 
   /*=====  Catalog =====*/
-  .main.catalog .container .main-item .item-title {
+  .main.catalog .container .main-item > h2 {
     font-size: 3.4rem; }
 
   /*=====  Catalog / Intro =====*/
@@ -901,37 +897,29 @@ p {
       margin-bottom: 0; } }
 @media (max-width: 565px) {
   /*=====  Index + Catalog =====*/
-  .main.index .container .main-item .item-title, .main.catalog .container .main-item .item-title {
+  .main.index .container .main-item > h2, .main.catalog .container .main-item > h2 {
     font-size: 2.5rem; }
 
   /*=====  Index / Intro  =====*/
   .intro.index {
     padding-top: 26.4rem;
     padding-bottom: 5rem; }
-
-  .intro-title {
-    font-size: 3.6rem; }
-
-  .intro-subtitle {
-    font-size: 1.8rem; }
-
-  .intro-text {
-    font-size: 1.4rem; }
+    .intro.index h1 {
+      font-size: 3.6rem; }
+    .intro.index h2 {
+      font-size: 1.8rem; }
+    .intro.index h3 {
+      font-size: 1.4rem; }
 
   /*=====  Index / News  =====*/
-  .album-cover img:last-child {
-    left: .5rem;
-    bottom: .5rem;
-    height: 1.5rem; }
-
-  .album-title {
+  .news-block h2 {
     text-align: left; }
 
-  .album-info {
+  .news-content {
     text-align: left; }
 
   /*=====  Index / Subscriptions  =====*/
-  .item-info {
+  .subscriptions-info {
     font-size: 1.6rem; }
 
   /*=====  Catalog =====*/
@@ -961,6 +949,10 @@ p {
   .discography-album {
     padding-right: 1rem;
     padding-left: 1rem; }
+    .discography-album .album-cover img:last-child {
+      left: .5rem;
+      bottom: .5rem;
+      height: 1.5rem; }
     .discography-album .album-name {
       font-size: 1.6rem;
       margin-bottom: .5rem; }
@@ -996,18 +988,17 @@ p {
         margin-bottom: 0; } }
 @media (max-width: 425px) {
   /*=====  Index + Catalog =====*/
-  .main.index .container .main-item .item-title, .main.catalog .container .main-item .item-title {
+  .main.index .container .main-item > h2, .main.catalog .container .main-item > h2 {
     font-size: 2rem; }
 
   /*=====  Index / Intro  =====*/
-  .intro-title {
+  .intro.index h1 {
     font-size: 3rem; }
-
-  .intro-text {
+  .intro.index h3 {
     font-size: 1.2rem; }
 
   /*=====  Index / Subscriptions  =====*/
-  .item-info {
+  .subscriptions-info {
     font-size: 1.4rem; }
 
   /*=====  Index / Application  =====*/
@@ -1015,7 +1006,7 @@ p {
     width: 100%; } }
 @media (max-width: 320px) {
   /*=====  Index / Subscriptions  =====*/
-  .item-info {
+  .subscriptions-info {
     font-size: 1.2rem; }
 
   /*=====  Catalog / Discography =====*/
