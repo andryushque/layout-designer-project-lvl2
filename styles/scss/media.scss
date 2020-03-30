@@ -11,48 +11,28 @@
     .subscription {
         width: 30%;
     }
-    .btn-sub {
+    .btn-outline-white {
         width: 87.5%;
     }
 
 
     /*=====  Catalog / Discography =====*/
     .discography-album {
-        width: 24%;
-        margin-right: 0;
-
-        &:nth-child(4n) {
-            margin-right: 0;
-        }
-
-        &:empty {
-            flex: 0 0 24%;
-        }
-    }
-    .album-cover {
-        img:first-child {
-            width: 100%;
-            height: 100%;
+        .album-cover {
+            img:first-child {
+                width: 100%;
+                height: 100%;
+            }
         }
     }
 
     /*=====  Catalog / Similar =====*/
     .similar-artist {
-        width: 24%;
-        margin-right: 0;
-
-        &:nth-child(4n) {
-            margin-right: 0;
-        }
-
-        &:empty {
-            flex: 0 0 24%;
-        }
-    }
-    .artist-photo {
-        img {
-            width: 100%;
-            height: 100%;
+        .artist-photo {
+            img {
+                width: 100%;
+                height: 100%;
+            }
         }
     }
 }
@@ -67,9 +47,6 @@
     }
 
     /*=====  Index / Intro  =====*/
-    .intro-inner {
-        margin: 0 auto;
-    }
     .intro-title {
         font-size: 5rem;
     }
@@ -84,7 +61,7 @@
     .subscription-type {
         margin-top: 2rem;
     }
-    .btn-sub {
+    .btn-outline-white {
         font-size: 2rem;
     }
     .item-info {
@@ -132,7 +109,8 @@
 
     /*=====  Catalog / Discography =====*/
     .discography-album {
-        width: 32%;
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
 
         &:nth-child(-n+4) {
             margin-bottom: 0;
@@ -141,16 +119,12 @@
         &:nth-child(-n+3) {
             margin-bottom: 5rem;
         }
-
-        &:empty {
-            flex: 0 0 32%;
-        }
     }
 
     /*=====  Catalog / Similar =====*/
     .similar-artist {
-        width: 32%;
-        margin-bottom: 0;
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
 
         &:nth-child(-n+4) {
             margin-bottom: 0;
@@ -158,10 +132,6 @@
 
         &:nth-child(-n+6) {
             margin-bottom: 5rem;
-        }
-
-        &:empty {
-            flex: 0 0 32%;
         }
     }
 
@@ -284,7 +254,7 @@
     .subscription-bottom {
         margin-bottom: 1.5rem;
     }
-    .btn-sub {
+    .btn-outline-white {
         width: 24rem;
         margin-bottom: 4rem;
     }
@@ -340,7 +310,7 @@
         }
 
     }
-    .btn-album {
+    .btn-outline-grey {
         width: 28rem;
     }
 
@@ -366,7 +336,7 @@
             margin-left: 0;
         }
     }
-    .btn-app {
+    .btn-pink {
         width: 28rem;
     }
 
@@ -402,25 +372,24 @@
     }
 
     /*=====  Catalog / Popular =====*/
-    .popular {
-        flex-direction: column;
-        justify-content: center;
-    }
     .popular-track {
-        width: 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
         margin-bottom: 2.5rem;
 
         &:last-child {
             margin-bottom: 0;
         }
-    }
-    .track-length {
-        margin-right: 0;
+
+        .track-length {
+            margin-right: 0;
+        }
     }
 
     /*=====  Catalog / Discography =====*/
     .discography-album {
-        width: 48%;
+        flex: 0 0 50%;
+        max-width: 50%;
 
         &:nth-child(-n+3) {
             margin-bottom: 0;
@@ -429,28 +398,30 @@
         &:nth-child(-n+4) {
             margin-bottom: 5rem;
         }
-    }
-    .album-name {
-        font-size: 1.8rem;
-    }
-    .album-year {
-        font-size: 1.5rem;
+
+        .album-name {
+            font-size: 1.8rem;
+        }
+        .album-year {
+            font-size: 1.5rem;
+        }
     }
 
     /*=====  Catalog / Similar =====*/
     .similar-artist {
-        width: 48%;
-        margin-bottom: 0;
+        flex: 0 0 50%;
+        max-width: 50%;
 
         &:nth-child(-n+6) {
             margin-bottom: 5rem;
         }
-    }
-    .artist-name {
-        font-size: 1.8rem;
-    }
-    .artist-fans {
-        font-size: 1.4rem;
+
+        .artist-name {
+            font-size: 1.8rem;
+        }
+        .artist-fans {
+            font-size: 1.4rem;
+        }
     }
 
 
@@ -526,6 +497,13 @@
         font-size: 1.6rem;
     }
 
+
+    /*=====  Catalog =====*/
+    .main-block {
+        margin-right: -1rem;
+        margin-left: -1rem;
+    }
+
     /*=====  Catalog / Intro =====*/
     .intro-artist {
         .artist-name {
@@ -534,33 +512,49 @@
         .artist-fans {
             font-size: 1.4rem;
         }
-        .btn-mix, .btn-fav {
+        .btn-purple, .btn-orange {
             width: 28rem;
             margin-right: 0;
         }
-        .btn-mix {
+        .btn-purple {
             margin-bottom: 2.5rem;
         }
-        .btn-fav {
+        .btn-orange {
             margin-bottom: 0;
         }
     }
 
-    /*=====  Catalog / Discography =====*/
-    .album-name {
-        font-size: 1.6rem;
-        margin-bottom: .5rem;
+    /*=====  Catalog / Popular =====*/
+    .popular-track {
+        padding-right: 1rem;
+        padding-left: 1rem;
     }
-    .album-year {
-        font-size: 1.4rem;
+
+    /*=====  Catalog / Discography =====*/
+    .discography-album {
+        padding-right: 1rem;
+        padding-left: 1rem;
+
+        .album-name {
+            font-size: 1.6rem;
+            margin-bottom: .5rem;
+        }
+        .album-year {
+            font-size: 1.4rem;
+        }
     }
 
     /*=====  Catalog / Similar =====*/
-    .artist-name {
-        font-size: 1.6rem;
-    }
-    .artist-fans {
-        font-size: 1.2rem;
+    .similar-artist {
+        padding-right: 1rem;
+        padding-left: 1rem;
+
+        .artist-name {
+            font-size: 1.6rem;
+        }
+        .artist-fans {
+            font-size: 1.2rem;
+        }
     }
 
 
