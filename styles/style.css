@@ -427,15 +427,15 @@ p {
   height: 4rem;
   font-size: 1.2rem; }
 
-/*=====  Application  =====*/
-.application-block {
+/*=====  Content  =====*/
+.content-block {
   line-height: 1.5;
   color: #999999; }
-  .application-block > img {
+  .content-block > img {
     margin: 0 auto; }
-  .application-block:nth-child(odd) {
+  .content-block:nth-child(odd) {
     margin-right: 3rem; }
-  .application-block:nth-child(even) {
+  .content-block:nth-child(even) {
     margin-left: 3rem; }
 
 .btn-pink {
@@ -644,12 +644,12 @@ p {
   .news-block:nth-child(even) {
     margin-left: 2rem; }
 
-  /*=====  Index / Application  =====*/
-  .application-block {
+  /*=====  Index / Content  =====*/
+  .-block {
     font-size: 1.5rem; }
-    .application-block:nth-child(odd) {
+    .-block:nth-child(odd) {
       margin-right: 2rem; }
-    .application-block:nth-child(even) {
+    .-block:nth-child(even) {
       margin-left: 2rem; }
 
   /*=====  Catalog / Discography =====*/
@@ -804,20 +804,20 @@ p {
   .btn-outline-grey {
     width: 28rem; }
 
-  /*=====  Index / Application  =====*/
-  .application {
+  /*=====  Index / Content  =====*/
+  .content {
     flex-wrap: wrap;
     justify-content: center; }
 
-  .application-block {
+  .content-block {
     width: 100%;
     text-align: center; }
-    .application-block img {
+    .content-block img {
       margin-bottom: 2.5rem; }
-    .application-block:nth-child(odd) {
+    .content-block:nth-child(odd) {
       margin-right: 0;
       order: 2; }
-    .application-block:nth-child(even) {
+    .content-block:nth-child(even) {
       margin-left: 0; }
 
   .btn-pink {
@@ -1001,8 +1001,8 @@ p {
   .subscriptions-info {
     font-size: 1.4rem; }
 
-  /*=====  Index / Application  =====*/
-  .application-block img {
+  /*=====  Index / Content  =====*/
+  .content-block img {
     width: 100%; } }
 @media (max-width: 320px) {
   /*=====  Index / Subscriptions  =====*/

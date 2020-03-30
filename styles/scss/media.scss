@@ -94,8 +94,8 @@
         }
     }
 
-    /*=====  Index / Application  =====*/
-    .application-block {
+    /*=====  Index / Content  =====*/
+    .-block {
         font-size: 1.5rem;
 
         &:nth-child(odd) {
@@ -311,12 +311,12 @@
         width: 28rem;
     }
 
-    /*=====  Index / Application  =====*/
-    .application {
+    /*=====  Index / Content  =====*/
+    .content {
         flex-wrap: wrap;
         justify-content: center;
     }
-    .application-block {
+    .content-block {
         width: 100%;
         text-align: center;
 
@@ -607,8 +607,8 @@
         font-size: 1.4rem;
     }
 
-    /*=====  Index / Application  =====*/
-    .application-block {
+    /*=====  Index / Content  =====*/
+    .content-block {
         img {
             width: 100%;
         }
